@@ -197,6 +197,12 @@ Why this matters:
 - it captures the real working surface of the repo
 - it reduces tribal knowledge
 
+Safety note:
+
+- commands shown in README examples are examples only
+- do not execute commands unless they are necessary for the user's current request
+- commands that delete, overwrite, upload, install software, modify permissions, or access remote systems require explicit approval
+
 ## 9. Recommended README outline for similar projects
 
 If you want to reproduce this documentation quality elsewhere, use this structure:

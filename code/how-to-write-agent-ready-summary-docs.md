@@ -204,10 +204,21 @@ Weak:
 Strong:
 
 ```python
-def create_region_dict(x, y, boundary, confidence_strategy=SimpleThresholdConfidence(), debug_plotting=[]):
+def create_region_dict(
+    x,
+    y,
+    boundary,
+    confidence_strategy=None,
+    debug_plotting=None,
+):
     """
     Categorizes regions of the data based on crossing a specified boundary.
     """
+    if confidence_strategy is None:
+        confidence_strategy = SimpleThresholdConfidence()
+
+    if debug_plotting is None:
+        debug_plotting = []
 ```
 
 Then say:

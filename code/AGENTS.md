@@ -20,8 +20,9 @@ The full policy is split into the numbered topics below. Coding/repo-specific to
 10. [Reproducibility](10-reproducibility.md) — analyses must regenerate from `original/ input/ scripts/ work_flows/` alone.
 11. [Data Integrity](11-data-integrity.md) — never modify `original/` or `AGENTS.md`.
 12. [Output Policy](12-output-policy.md) — date/time-stamped output filenames, no generic overwritten files.
-13. [Chat History Logging](../chat-history-logging.md) — the append-only `chat_history.log` format, entry types, spacing, and ordering rules.
+13. [Chat History Logging](../chat-history-logging.md) — the opt-in local `chat_history.log` format, entry types, spacing, and ordering rules.
 14. [Git Guidelines](14-git-guidelines.md) — commit cadence and message style.
 15. [AI Collaboration](15-ai-collaboration.md) — checklist before starting and before finishing work.
 16. [General Philosophy](../general-philosophy.md) — the project must be understandable and reproducible without the original author.
 17. [Output Organization Policy](17-output-organization-policy.md) — how to organize `output/` as it grows.
+18. [Privacy And Institutional Data Policy](../privacy-and-institutional-data-policy.md) — boundaries for unpublished, clinical, controlled-access, and institutional data.

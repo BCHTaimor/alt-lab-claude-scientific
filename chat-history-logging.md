@@ -1,6 +1,10 @@
 # Chat History Logging
 
-Maintain an append-only conversation log for each task or working directory.
+Chat-history logging is opt-in.
+
+Do not create or update `chat_history.log` unless the user explicitly requests local chat logging for the current project or task.
+
+If logging is enabled, maintain an append-only conversation log for that task or working directory.
 
 Recommended filename:
 
@@ -16,11 +20,25 @@ The log should record:
 * the main files created or updated by the AI
 * the paths of those files
 
+If logging is not explicitly enabled, do not create a log file, do not append to an existing log file, and do not infer consent from the presence of older logs.
+
 Use the established local time for all timestamps.
 
 For each user-visible AI message, capture the timestamp at the time the message is emitted or as close to emission as practical. If chat-history entries are written in a batch later, preserve the originally captured timestamp for each message; do not assign the same final write-time timestamp to multiple earlier messages. Exact second-level precision is preferred when available, but chronological correctness is more important than repeatedly querying the system clock.
 
 Keep new `chat_history.log` entries in chronological order whenever practical. Do not overwrite, rewrite, reorder, or delete previous log entries unless the user explicitly requests it.
+
+## Privacy And Storage Restrictions
+
+Logs must remain local by default.
+
+Do not commit, upload, sync, or share `chat_history.log` unless the user explicitly requests that action for the current task.
+
+Do not record unpublished results, protected health information, personally identifiable information, controlled-access genomic data, confidential manuscript or peer-review content, credentials, private keys, session cookies, or identifiable sample metadata.
+
+Redact sensitive paths, identifiers, and tokens when necessary, and mark the redaction clearly.
+
+`chat_history.log` should be listed in `.gitignore` unless the user has a specific, reviewed reason to version it.
 
 ## User Prompt Entries
 
