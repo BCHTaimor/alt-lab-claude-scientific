@@ -65,10 +65,21 @@ The repo’s dependency injection style is lightweight and practical.
 Example:
 
 ```python
-def create_region_dict(x, y, boundary, confidence_strategy=SimpleThresholdConfidence(), debug_plotting=[]):
+def create_region_dict(
+    x,
+    y,
+    boundary,
+    confidence_strategy=None,
+    debug_plotting=None,
+):
     """
     Categorizes regions of the data based on crossing a specified boundary.
     """
+    if confidence_strategy is None:
+        confidence_strategy = SimpleThresholdConfidence()
+
+    if debug_plotting is None:
+        debug_plotting = []
 ```
 
 What is being injected:
@@ -137,6 +148,8 @@ Caution:
 
 - this is appropriate for script-driven pipelines
 - it is less appropriate for large concurrent service architectures
+- singleton examples should document test-isolation and state-reset strategy clearly
+- shared singleton state can leak across tests or parallel analyses if not reset deliberately
 
 ## 4. Interface-driven polymorphism for validators and loaders
 

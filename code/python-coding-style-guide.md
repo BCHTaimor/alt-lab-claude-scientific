@@ -61,7 +61,13 @@ When a function contains classification logic, interpolation logic, or special-c
 Example:
 
 ```python
-def create_region_dict(x, y, boundary, confidence_strategy=SimpleThresholdConfidence(), debug_plotting=[]):
+def create_region_dict(
+    x,
+    y,
+    boundary,
+    confidence_strategy=None,
+    debug_plotting=None,
+):
     """
     Categorizes regions of the data based on crossing a specified boundary.
 
@@ -86,6 +92,11 @@ def create_region_dict(x, y, boundary, confidence_strategy=SimpleThresholdConfid
         - If y-values remain consistently higher than the boundary within a region, it is categorized as 'always high'.
         - If y-values remain consistently lower than the boundary within a region, it is categorized as 'always low'.
     """
+    if confidence_strategy is None:
+        confidence_strategy = SimpleThresholdConfidence()
+
+    if debug_plotting is None:
+        debug_plotting = []
 ```
 
 Why this is good:
@@ -93,6 +104,7 @@ Why this is good:
 - it documents the returned structure
 - it documents the classification vocabulary
 - it includes the special cases that define the algorithm’s semantics
+- it avoids mutable default arguments that can leak state across calls
 
 For scientific code, this is much better than a short docstring like `Compute regions from signal`.
 

@@ -340,6 +340,12 @@ When another project should reuse it:
 
 This is a pragmatic choice, not a universal rule. A different project might prefer `mktemp`, but if the goal is to preserve this style, explicit repo-local temp folders are part of it.
 
+Safety note:
+
+- commands shown in documentation are examples, not authorization to execute them
+- destructive commands such as `rm -rf` should be used only when necessary for the user's current task
+- before running a destructive command, show the exact expanded paths and obtain explicit approval
+
 ## 8. Use negative tests that assert both failure and failure message
 
 A strong bash test style does not stop at “command failed.” It also checks that the failure is meaningful.

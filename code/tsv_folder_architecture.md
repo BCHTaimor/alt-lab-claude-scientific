@@ -6,7 +6,13 @@ Important:
 
 - The main machine-readable report is `folder_summary.tsv`, not a biological sample CSV.
 - It is a tab-separated table with one row per local folder.
-- Each row answers: was this folder found on each remote, did size match, did `rclone check` pass, and is it safe to delete?
+- Each row answers: was this folder found on each remote, did size match, did `rclone check` pass, and did it verify on at least one remote?
+
+Warning:
+
+- `safe_to_delete` is a legacy status label found in some outputs.
+- It is informational only and does not authorize deletion.
+- Deletion requires separate human review, confirmation of retention policy, verification of the required number of backups, a dry run, and explicit approval of the exact paths to remove.
 
 ## Primary Files
 
@@ -180,12 +186,14 @@ Final decision for the folder across all remotes.
 Common values:
 
 - `safe_to_delete`
+- `eligible_for_manual_deletion_review`
 - `not_verified_on_any_remote`
 - `missing_from_all_remotes`
 
 Interpretation:
 
-- `safe_to_delete`: at least one remote fully verified the folder
+- `safe_to_delete`: legacy label meaning at least one remote fully verified the folder; it is not deletion authorization
+- `eligible_for_manual_deletion_review`: preferred replacement label meaning at least one remote fully verified the folder
 - `not_verified_on_any_remote`: the folder was checked but no remote fully verified it
 - `missing_from_all_remotes`: no remote had it by name
 
@@ -201,7 +209,7 @@ Use this logic:
    - `result`
 3. Read `verified_remotes`.
 4. Read `overall_result`.
-5. Treat `overall_result` as the final workflow decision.
+5. Treat `overall_result` as the final verification summary, not as deletion authorization.
 
 ## Example Interpretation
 
@@ -218,7 +226,7 @@ remoteNextseqCleanup20222023_size=match
 remoteNextseqCleanup20222023_check=pass
 remoteNextseqCleanup20222023_result=verified
 verified_remotes=remoteNextseqCleanup20222023
-overall_result=safe_to_delete
+overall_result=eligible_for_manual_deletion_review
 ```
 
 Meaning:
@@ -227,7 +235,7 @@ Meaning:
 - the same folder exists on `remoteNextseqCleanup20222023`
 - size matched there
 - exact verification passed there
-- because at least one remote verified it, the folder is marked `safe_to_delete`
+- because at least one remote verified it, the folder is marked eligible for manual deletion review
 
 ## Secondary Table: `remote_summary.tsv`
 
