@@ -1,28 +1,65 @@
-# AGENTS.md
+# INFO
 
-# AI Project Working Guidelines
+This file indexes the reusable coding skills in the `code/` section.
 
-This document defines the standard operating procedures for all AI coding agents working on this project, including (but not limited to) ChatGPT Codex, Claude Code, Gemini CLI, Cursor, and future AI assistants.
+Use it to choose which skill files to load when the user asks for coding, testing, repo structure, workflow, Git, or documentation help.
 
-These guidelines should be followed unless explicitly overridden by the user.
+# Skill: Code Skill Index And Selection
 
-The full policy is split into the numbered topics below. Coding/repo-specific topics live alongside this file; a few general AI-conduct topics (language, date/time, logging, philosophy) apply beyond coding and live at the root of the folder instead. Read them all before starting work; each is short and covers one topic.
+## Purpose
 
-1. [Fundamental Principles](01-fundamental-principles.md) — the non-negotiable rules: never touch `original/`, preserve reproducibility and traceability.
-2. [Language Policy](../language-policy.md) — primary user language, English-only source code, and bilingual reports.
-3. [Date and Time Policy](../date-and-time-policy.md) — how to establish and confirm the working date, including the pre-5 AM rule.
-4. [Standard Project Structure](04-standard-project-structure.md) — the `original/ input/ scripts/ output/ work_flows/ reports/` layout and what belongs in each.
-5. [File Naming Convention](05-file-naming-convention.md) — `name.YYYYMMDD.ext` naming and versioning.
-6. [Workflow Files](06-workflow-files.md) — recording reproducible Bash workflows, command documentation, and timing.
-7. [Analysis Reports](07-analysis-reports.md) — required HTML report sections (Background, Objectives, Input Data, Methods, Results, Interpretation, References).
-8. [Report Preservation](08-report-preservation.md) — never overwrite timestamped reports; when edits to old reports are allowed.
-9. [Programming Guidelines](09-programming-guidelines.md) — preferred languages and tools (R/ggplot2, Perl/Python, Bash).
-10. [Reproducibility](10-reproducibility.md) — analyses must regenerate from `original/ input/ scripts/ work_flows/` alone.
-11. [Data Integrity](11-data-integrity.md) — never modify `original/` or `AGENTS.md`.
-12. [Output Policy](12-output-policy.md) — date/time-stamped output filenames, no generic overwritten files.
-13. [Chat History Logging](../chat-history-logging.md) — the opt-in local `chat_history.log` format, entry types, spacing, and ordering rules.
-14. [Git Guidelines](14-git-guidelines.md) — commit cadence and message style.
-15. [AI Collaboration](15-ai-collaboration.md) — checklist before starting and before finishing work.
-16. [General Philosophy](../general-philosophy.md) — the project must be understandable and reproducible without the original author.
-17. [Output Organization Policy](17-output-organization-policy.md) — how to organize `output/` as it grows.
-18. [Privacy And Institutional Data Policy](../privacy-and-institutional-data-policy.md) — boundaries for unpublished, clinical, controlled-access, and institutional data.
+Use this file when deciding which `code/` documents are relevant to a coding or repo-maintenance task.
+
+The `code/` section is organized as a set of reusable skills rather than as a numbered policy manual.
+
+## Default Core Skills
+
+Read these first for most coding tasks:
+
+1. [skill-project-integrity-boundaries.md](skill-project-integrity-boundaries.md)
+2. [skill-project-collaboration-boundaries.md](skill-project-collaboration-boundaries.md)
+3. [skill-reproducible-analysis-design.md](skill-reproducible-analysis-design.md)
+4. [skill-git-safety-and-approval-workflow.md](skill-git-safety-and-approval-workflow.md)
+
+## Python And Design Skills
+
+- [skill-python-contract-and-docstring-writing.md](skill-python-contract-and-docstring-writing.md)
+- [skill-python-extension-patterns.md](skill-python-extension-patterns.md)
+
+## Testing Skills
+
+- [skill-test-case-design-for-public-interfaces.md](skill-test-case-design-for-public-interfaces.md)
+- [skill-bash-test-design-for-file-based-pipelines.md](skill-bash-test-design-for-file-based-pipelines.md)
+- [skill-repo-structure-and-testing-layout.md](skill-repo-structure-and-testing-layout.md)
+
+## Documentation Skills
+
+- [skill-readme-writing-for-technical-projects.md](skill-readme-writing-for-technical-projects.md)
+- [skill-agent-ready-document-writing.md](skill-agent-ready-document-writing.md)
+- [skill-analysis-report-writing.md](skill-analysis-report-writing.md)
+- [skill-report-version-preservation.md](skill-report-version-preservation.md)
+
+## Repo And Workflow Skills
+
+- [skill-repo-structure-and-file-placement.md](skill-repo-structure-and-file-placement.md)
+- [skill-file-naming-and-versioning.md](skill-file-naming-and-versioning.md)
+- [skill-workflow-documentation-and-command-logging.md](skill-workflow-documentation-and-command-logging.md)
+- [skill-output-file-discipline.md](skill-output-file-discipline.md)
+- [skill-output-directory-organization.md](skill-output-directory-organization.md)
+
+## Safety And Operations Skills
+
+- [skill-project-integrity-boundaries.md](skill-project-integrity-boundaries.md)
+- [skill-original-data-protection.md](skill-original-data-protection.md)
+- [skill-reproducible-analysis-design.md](skill-reproducible-analysis-design.md)
+- [skill-language-and-tool-selection.md](skill-language-and-tool-selection.md)
+- [skill-git-safety-and-approval-workflow.md](skill-git-safety-and-approval-workflow.md)
+- [skill-project-collaboration-boundaries.md](skill-project-collaboration-boundaries.md)
+
+## Related Root-Level Policies
+
+- [../language-policy.md](../language-policy.md)
+- [../date-and-time-policy.md](../date-and-time-policy.md)
+- [../chat-history-logging.md](../chat-history-logging.md)
+- [../general-philosophy.md](../general-philosophy.md)
+- [../privacy-and-institutional-data-policy.md](../privacy-and-institutional-data-policy.md)

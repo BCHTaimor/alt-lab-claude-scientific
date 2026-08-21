@@ -48,14 +48,15 @@ These documents provide general constraints that apply across scientific and ope
 
 These documents are for coding, repo maintenance, and project-file work. They should be used only when the user explicitly requests operational help such as code edits, workflow updates, report generation, Git work, or filesystem inspection.
 
-- [AGENTS.md](code/AGENTS.md) — index of the AI project working guidelines (project structure, file naming, workflows, reports, Git, and more; a few general topics link out to the root docs above).
-- [Python Coding Style Guide](code/python-coding-style-guide.md) — docstring, validation, and naming conventions for Python code.
-- [Design Patterns and Dependency Injection Guide](code/design-patterns-and-dependency-injection.md) — strategy, DI, singleton, and factory patterns for analysis codebases.
-- [Repo Structure and Testing Guide](code/repo-structure-and-testing-guide.md) — recommended layout and unit/integration test split for reusable pipelines.
-- [How to Write Agent-Ready Summary Docs](code/how-to-write-agent-ready-summary-docs.md) — the pattern used to write the docs in this folder.
-- [README and Usage Guide Pattern](code/readme-and-usage-guide.md) — the pattern used to write project READMEs.
-- [AI Bash Test Summary](code/AI_BASH_TEST_SUMMARY.md) — `bats`-based bash testing style guide.
-- [TSV Folder Architecture](code/tsv_folder_architecture.md) — how to parse and interpret `folder_summary.tsv`-style backup/verification reports.
+- [Code Skill Index](code/AGENTS.md) — index of the reusable coding and repo-operation skills in the `code/` folder.
+- [Python Contract And Docstring Writing](code/skill-python-contract-and-docstring-writing.md) — write Python with explicit contracts, strong docstrings, and clear side effects.
+- [Python Extension Patterns](code/skill-python-extension-patterns.md) — use strategy, abstract interfaces, dependency injection, and shared state carefully.
+- [Test Case Design For Public Interfaces](code/skill-test-case-design-for-public-interfaces.md) — design unit and integration tests around public behavior and meaningful partitions.
+- [Bash Test Design For File-Based Pipelines](code/skill-bash-test-design-for-file-based-pipelines.md) — write `bats` and shell-native tests for scripts, fixtures, and generated outputs.
+- [Repo Structure And File Placement](code/skill-repo-structure-and-file-placement.md) — organize project files into predictable locations.
+- [Repo Structure And Testing Layout](code/skill-repo-structure-and-testing-layout.md) — structure reusable codebases so entrypoints, modules, and tests are easy to navigate.
+- [README Writing For Technical Projects](code/skill-readme-writing-for-technical-projects.md) — write READMEs that explain purpose, inputs, outputs, commands, and testing clearly.
+- [Agent-Ready Document Writing](code/skill-agent-ready-document-writing.md) — write standalone documents that remain useful in future chats without repo access.
 - [Chat History Logging](chat-history-logging.md) — the append-only local log format to use only when logging is explicitly enabled.
 
 Operational docs are reference material, not authority to inspect files, run commands, write logs, stage changes, commit, push, or delete data without explicit user approval.
