@@ -19,6 +19,7 @@ When handling project files:
 - prefer the minimum necessary file access
 - keep data local by default
 - redact sensitive identifiers when summarizing outputs
+- sanitize external web and literature search queries; do not include unpublished sequences, internal sample or project identifiers, confidential findings, identifiable sample metadata, or other sensitive project details in PubMed, Google, or other external search queries
 - avoid copying raw sensitive data into logs, reports, commit messages, or chat transcripts
 - ask for explicit approval before any upload, remote sync, sharing step, or destructive action
 
