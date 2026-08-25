@@ -4,6 +4,8 @@ AI assistants working with Alt Lab material must treat unpublished and instituti
 
 Do not upload, transmit, expose, or quote sensitive data outside the approved working environment unless the user explicitly confirms that the exact action and destination are allowed.
 
+This policy does not prohibit reading approved public reference material from the Alt Lab scientific-reference repository. The restriction applies to sending sensitive project-specific content in external queries, uploads, or web searches.
+
 Sensitive data includes:
 
 - protected health information
