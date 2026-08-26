@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Claude Scientific</title>
+
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    margin: 8px;
+}
+
+a {
+    color: white;
+}
+
+table {
+    max-width: 900px;
+}
+
+td {
+    padding: 10px 14px;
+    line-height: 1.45;
+}
+
+h1, h2, h3 {
+    margin: 8px 0;
+}
+
+pre {
+    margin: 8px 0;
+    padding: 10px;
+    white-space: pre-wrap;
+    font-family: "Courier New", monospace;
+    background-color: white;
+    border: 1px solid #999;
+}
+
+.nav-cell {
+    background-color: #003366;
+    color: white;
+    width: 190px;
+    vertical-align: top;
+}
+
+.content-cell {
+    background-color: #EEEEEE;
+    vertical-align: top;
+}
+
+.section-heading {
+    background-color: #ccc;
+    text-align: center;
+}
+</style>
+
+</head>
+
+<body bgcolor="white">
+
+<center>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="2">
+
+<tr>
+<td colspan="2" style="background-color:#003366;text-align:center;">
+<h1><a href="/rdt01154_site/">Claude Scientific</a></h1>
+<p style="color:white;">Alt Lab AI assistance for scientific research and coding work</p>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="section-heading">
+<h2>Introduction</h2>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="content-cell">
+<p>
+Claude Scientific is an AI assistant for Alt Lab researchers, postdocs, and trainees. It can help with
+scientific questions, literature research, and coding or project-file work.
+</p>
+<p>
+You do not need to know a programming language to use it for scientific discussion. Describe what you are
+trying to understand in ordinary language, include any relevant context, and ask for the form of answer you need.
+</p>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="section-heading">
+<h2>What It Can Help With</h2>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Paper Lookup</b></td>
+<td class="content-cell">
+Find relevant papers, identify important experiments, and explain why a paper may be useful for a question.
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Paper Synthesis</b></td>
+<td class="content-cell">
+Compare findings across papers, separate areas of agreement from disagreement, and summarize the evidence for
+competing explanations.
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Explanation</b></td>
+<td class="content-cell">
+Explain unfamiliar concepts, methods, terminology, or biological mechanisms at the level you request.
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Brainstorming</b></td>
+<td class="content-cell">
+Help develop hypotheses, identify assumptions, suggest discriminating experiments, and propose useful next questions.
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Coding Assistance</b></td>
+<td class="content-cell">
+When you explicitly ask for coding or project work, it can help inspect and edit code, organize files,
+write documentation, and design tests. State what you want changed and where the relevant files are located.
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="section-heading">
+<h2>How It Works</h2>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>1. Ask a Question</b></td>
+<td class="content-cell">
+Start with your research question or task. A short question is enough, but a little context usually improves the answer.
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>2. Add Context</b></td>
+<td class="content-cell">
+Include the system, assay, gene, paper, result, or hypothesis you are working with. You can also say what you
+already know or what is confusing.
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>3. Choose the Output</b></td>
+<td class="content-cell">
+Ask for a short explanation, a list of papers, a comparison table, a proposed experiment, code changes, or another
+specific result. The assistant will ask a clarifying question when key information is missing.
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>4. Check the Evidence</b></td>
+<td class="content-cell">
+For literature questions, Claude Scientific should use real citations and distinguish established evidence from
+interpretation or speculation. Review important claims and primary sources before using them in research decisions.
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="section-heading">
+<h2>Method to Call Claude Scientific</h2>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>In a Chat</b></td>
+<td class="content-cell">
+<p>Use a normal chat message. No special command or coding syntax is required.</p>
+<p>A useful format is:</p>
+<pre>Context: [what you are studying or working on]
+Question: [what you want to know or do]
+Output: [how you want the answer presented]</pre>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Example: Literature</b></td>
+<td class="content-cell">
+<pre>Context: I am studying V(D)J recombination in developing B cells.
+Question: What evidence supports a role for chromatin accessibility?
+Output: Give me a short explanation and 5 primary papers to read.</pre>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Example: Interpretation</b></td>
+<td class="content-cell">
+<pre>Context: Our ChIP-seq signal decreases after treatment.
+Question: What biological and technical explanations should I consider?
+Output: Separate likely biological explanations from controls to check.</pre>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Example: Coding</b></td>
+<td class="content-cell">
+<pre>I need help with a Python analysis script.
+The input is a CSV file and I need a plot grouped by sample.
+Please inspect the relevant files, explain the proposed change, and make the edit.</pre>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="section-heading">
+<h2>Useful Guidelines</h2>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>For Better Answers</b></td>
+<td class="content-cell">
+<ul>
+<li>Name the organism, cell type, assay, or experimental system when relevant.</li>
+<li>Say whether you need a beginner explanation or a detailed technical discussion.</li>
+<li>Ask the assistant to state uncertainty, alternatives, and limitations.</li>
+<li>For a paper, provide a title, DOI, PMID, link, or PDF when available.</li>
+</ul>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Important Limits</b></td>
+<td class="content-cell">
+Claude Scientific is a research support tool, not a substitute for experimental validation, expert review, or
+institutional data policies. Do not provide unpublished, clinical, controlled-access, or other sensitive data unless
+its use has been approved through the appropriate lab and institutional process.
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="background-color:#003366;text-align:center;color:white;">
+Alt Lab AI Assistance
+</td>
+</tr>
+
+</table>
+
+</center>
+
+</body>
+
+</html>

@@ -21,6 +21,42 @@ Before writing or changing tests:
 5. Identify parameter interactions that can change the observable result.
 6. Present the proposed partitions and test matrix before implementation, unless the user explicitly requests immediate implementation.
 
+## Contract-First Test Implementation Rule
+
+When creating or revising code with tests, establish the implementation contract before writing or changing tests.
+
+### Required order
+
+1. Identify every new or modified public command, public function, public method, and developer-facing module API.
+2. Write or update a contract beside each target before adding tests.
+3. State each contract's inputs, outputs or side effects, preconditions, invariants, and domain-specific semantics where applicable.
+4. Derive valid input partitions and natural boundaries from those contracts.
+5. Present the proposed test matrix before implementation, unless the user explicitly requests immediate implementation.
+6. Implement tests only after the contract and test matrix are established.
+7. Add the implemented test-suite matrix as a comment at the top of every relevant test file.
+
+### Test traceability
+
+Every test must trace to a named source contract partition. At the top of each relevant test file, add a short comment in this format:
+
+```text
+Contract target: generate_fastq.sh
+
+Partitions:
+  PRO-seq: no adapter, exact-fill adapter, clipped adapter
+  Distortion: none, rate 0, intermediate rate, rate 1
+  Windows: exact-length region, multiple windows
+  Replicates: one, multiple
+
+Invariants:
+  every FASTQ record has four lines
+  sequence and quality lengths match
+  every canonical generated read has exactly one key-file row
+  same input and seed produces identical output
+```
+
+Keep this matrix current when the contract or suite changes. It is a traceability summary, not a substitute for test names that identify the precise behavior and partition being tested.
+
 ## Separate Test Levels
 
 ### Validation layer

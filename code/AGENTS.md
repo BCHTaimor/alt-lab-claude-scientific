@@ -16,10 +16,11 @@ The `code/` section is organized as a set of reusable skills rather than as a nu
 
 Read these first for most coding tasks:
 
-1. [skill-project-integrity-boundaries.md](skill-project-integrity-boundaries.md)
-2. [skill-project-collaboration-boundaries.md](skill-project-collaboration-boundaries.md)
-3. [skill-reproducible-analysis-design.md](skill-reproducible-analysis-design.md)
-4. [skill-git-safety-and-approval-workflow.md](skill-git-safety-and-approval-workflow.md)
+1. [skill-code-workflow-basics.md](skill-code-workflow-basics.md)
+2. [skill-project-integrity-boundaries.md](skill-project-integrity-boundaries.md)
+3. [skill-project-collaboration-boundaries.md](skill-project-collaboration-boundaries.md)
+4. [skill-reproducible-analysis-design.md](skill-reproducible-analysis-design.md)
+5. [skill-git-safety-and-approval-workflow.md](skill-git-safety-and-approval-workflow.md)
 
 ## Python And Design Skills
 
