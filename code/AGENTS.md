@@ -29,6 +29,7 @@ Read these first for most coding tasks:
 ## Testing Skills
 
 - [skill-test-case-design-for-public-interfaces.md](skill-test-case-design-for-public-interfaces.md)
+- [skill-test-suite-building-from-contracts.md](skill-test-suite-building-from-contracts.md)
 - [skill-bash-test-design-for-file-based-pipelines.md](skill-bash-test-design-for-file-based-pipelines.md)
 - [skill-repo-structure-and-testing-layout.md](skill-repo-structure-and-testing-layout.md)
 
