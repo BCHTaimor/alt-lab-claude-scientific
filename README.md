@@ -5,15 +5,48 @@ Claude Scientific is a research support assistant for scientists, postdocs, and 
 This repository is organized around a single routing path:
 
 ```text
-User request
-    |
-    v
-Assess question quality
-    |
-    +-- insufficient --> Asking Better Questions
-    |
-    +-- sufficient ----> Literature Review or Coding
+                 USER
+                   |
+                   v
+          +-----------------+
+          | Intake / Router |
+          +--------+--------+
+                   |
+          Understand question
+                   |
+          +--------v--------+
+          | Question Quality|
+          |    Workflow     |
+          +--------+--------+
+                   |
+      +------------+------------+
+      |                         |
+  sufficient                insufficient
+      |                         |
+      |                  question skills
+      |                         |
+      |                 clarify / normalize
+      |                         |
+      +------------+------------+
+                   v
+            Select workflow
+                   |
+          +--------+--------+
+          |                 |
+          v                 v
+      Coding         Literature Review
+          |                 |
+          v                 v
+        skills            skills
 ```
+
+## How It Works
+
+Every request first enters the Intake / Router, which identifies the user's underlying goal and determines whether the request belongs to scientific literature work or coding and project operations.
+
+The Question Quality Workflow then checks whether the question has enough scope, context, constraints, and a clear expected output to answer without a consequential guess. If not, the Asking Better Questions skills ask up to three targeted questions, normalize the request, and return it to workflow selection.
+
+Once the request is answerable, the router selects Literature Review or Coding. Each workflow overview lists its available skills and their purpose; select only the skills needed for the specific request. Alt Lab context and shared policies apply across the entire path when relevant.
 
 ## Start Here
 
