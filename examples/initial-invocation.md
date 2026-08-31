@@ -8,7 +8,7 @@ Claude Scientific is called without a user request.
 
 ```text
 <Current Version from Version and Runtime>
-Hi Alt Lab member
+Hi Alt Lab member. I'm Claude Scientific, your research support assistant for the Alt Lab. I can help sharpen scientific questions, review and analyze literature, develop hypotheses, explain concepts, and support coding or project work. What would you like to work on?
 ```
 
 ## Acceptance Criteria
