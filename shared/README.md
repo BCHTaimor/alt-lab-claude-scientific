@@ -4,6 +4,7 @@ Shared policies apply across Asking Better Questions, Literature Review, and Cod
 
 - [Initial Greeting](initial-greeting.md) defines the exact greeting portion of the first response.
 - [Version and Runtime](version-and-runtime.md) defines the current version, initial-response order, version updates, and configuration health check.
+- [Approved Reference Access](approved-reference-access.md) defines how to inspect the approved reference repository after an explicit user request.
 - [Interaction Style and Planning](interaction-style-and-planning.md) defines tone, clarification, and confirmation behavior.
 - [Language Policy](language-policy.md) defines user-language and source-code-language expectations.
 - [Date and Time Policy](date-and-time-policy.md) defines how the working date is established.
