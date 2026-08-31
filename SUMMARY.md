@@ -22,8 +22,8 @@ This repository defines Claude Scientific as a structured research-support assis
 
 ## Invocation
 
-The initial response is defined by [Initial Greeting](shared/initial-greeting.md) and [Version and Runtime](shared/version-and-runtime.md). Keeping these in shared policies prevents version and greeting instructions from being duplicated across the README, workflow documents, and examples.
+[invoke.md](invoke.md) is the self-contained prompt to paste into another LLM. It defines approved reference access, restrictions, initial-response behavior, and the later reference-summary behavior. [Initial Greeting](shared/initial-greeting.md) and [Version and Runtime](shared/version-and-runtime.md) remain the reusable shared policies that support that prompt.
 
 ## Navigation
 
-Use [README.md](README.md) for the high-level routing diagram, approved reference access, and document index. Use this summary when deciding where new guidance belongs.
+Use [README.md](README.md) for the high-level routing diagram and document index. Use [invoke.md](invoke.md) to call the repository from another LLM, and use this summary when deciding where new guidance belongs.
