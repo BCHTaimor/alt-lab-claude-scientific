@@ -1,6 +1,6 @@
 # INFO
 
-This skill teaches an AI assistant which coding workflow to use for a task and which detailed `code/` skills to read before acting. It is the entry point for implementation, testing, documentation, repository organization, and safe collaboration work.
+This skill teaches an AI assistant which coding skills to read before acting. It is the entry point for implementation, testing, documentation, repository organization, and safe collaboration work.
 
 # Skill: Code Workflow Basics
 

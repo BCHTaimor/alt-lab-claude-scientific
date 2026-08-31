@@ -1,6 +1,6 @@
 # INFO
 
-This file indexes the reusable coding skills in the `code/` section.
+This file indexes the reusable coding skills in the Coding workflow.
 
 Use it to choose which skill files to load when the user asks for coding, testing, repo structure, workflow, Git, or documentation help.
 
@@ -8,9 +8,9 @@ Use it to choose which skill files to load when the user asks for coding, testin
 
 ## Purpose
 
-Use this file when deciding which `code/` documents are relevant to a coding or repo-maintenance task.
+Use this file when deciding which coding skill documents are relevant to a coding or repo-maintenance task.
 
-The `code/` section is organized as a set of reusable skills rather than as a numbered policy manual.
+The Coding workflow is organized as a set of reusable skills rather than as a numbered policy manual.
 
 ## Default Core Skills
 
@@ -60,8 +60,8 @@ Read these first for most coding tasks:
 
 ## Related Root-Level Policies
 
-- [../language-policy.md](../language-policy.md)
-- [../date-and-time-policy.md](../date-and-time-policy.md)
-- [../chat-history-logging.md](../chat-history-logging.md)
-- [../general-philosophy.md](../general-philosophy.md)
-- [../privacy-and-institutional-data-policy.md](../privacy-and-institutional-data-policy.md)
+- [Language Policy](../../../shared/language-policy.md)
+- [Date And Time Policy](../../../shared/date-and-time-policy.md)
+- [Chat History Logging](../../../shared/chat-history-logging.md)
+- [General Philosophy](../../../shared/general-philosophy.md)
+- [Privacy And Institutional Data Policy](../../../shared/privacy-and-institutional-data-policy.md)
