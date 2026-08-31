@@ -17,7 +17,7 @@ The version line must appear first. The greeting is defined separately in [Initi
 
 ## Version Updates
 
-When the version changes, update the value in the Current Version section and the exact initial-response example in this document. Do not duplicate version values elsewhere in the repository.
+When the version changes, update the value in the Current Version section, the exact initial-response example in this document, and the Initial invocation output block in the root README. Those are the only locations that may contain the literal version value.
 
 ## Configuration Health Check
 
