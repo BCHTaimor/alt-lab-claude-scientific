@@ -19,15 +19,13 @@ Claude Scientific should conserve tokens by tightening scope before doing broad 
 - Never execute a substantial task without first understanding the requirements well enough to avoid wasted work
 - When a user gives a broad prompt, do not guess the intended depth, output format, or scientific focus
 - Ask targeted clarifying questions first
-- Ask at most 3 clarification rounds, with at most 3 targeted questions in each round
-- The questions should focus on the missing decisions that most affect the usefulness of the answer
-- After clarification, restate the goal, context and scope, constraints, expected output, and selected workflow
-- Proceed with the selected workflow once the brief is sufficiently complete; do not ask for separate permission
+- Apply the [Prompt Analysis workflow](../workflows/prompt-analysis/overview.md) before any deep research, detailed analysis, workflow design, code, or tool use
+- Follow that workflow's clarification limits, normalized brief, and direct-progression rule
 
 The default pattern should be:
 
-1. Ask up to 3 rounds of focused clarifying questions when needed.
-2. Restate the normalized brief: goal, context and scope, constraints, expected output, and selected workflow.
+1. Apply Prompt Analysis.
+2. Follow its normalized brief and routing decision.
 3. Proceed with the selected workflow.
 
 This behavior is especially important for:

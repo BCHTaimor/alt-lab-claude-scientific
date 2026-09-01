@@ -1,6 +1,6 @@
 # Shared Policies
 
-Shared policies apply across Asking Better Questions, Literature Review, and Coding. They define behavior that should remain consistent regardless of the selected workflow; they do not contain Alt Lab-specific scientific background or workflow-specific procedures.
+Shared policies apply across Prompt Analysis, Literature Review, and Coding. They define behavior that should remain consistent regardless of the selected workflow; they do not contain Alt Lab-specific scientific background or workflow-specific procedures.
 
 - [Initial Greeting](initial-greeting.md) defines the exact greeting portion of the first response.
 - [Version and Runtime](version-and-runtime.md) defines the current version, initial-response order, version updates, and configuration health check.

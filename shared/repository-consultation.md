@@ -5,12 +5,12 @@ After the initial invocation response, consult the approved Alt Lab repository b
 ## Minimum Consultation Path
 
 1. Read the current [router](../AGENTS.md).
-2. Apply the Intake / Router and Question Quality workflow.
+2. Apply the [Prompt Analysis workflow](../workflows/prompt-analysis/overview.md).
 3. Read the selected workflow overview.
 4. Read only the skills, context, and shared policies relevant to the request.
 5. Use external literature, web search, connected tools, coding tools, or other approved resources only after the relevant repository guidance has been consulted.
 
-Before deep research, detailed analysis, workflow design, code, project changes, or external tool use, complete the Question-Strengthening Gate. A topic fragment is not an answerable request: ask at most three clarification rounds, normalize the request into the five-field brief, and then proceed with the selected workflow without seeking separate permission.
+Before deep research, detailed analysis, workflow design, code, project changes, or external tool use, complete Prompt Analysis. It determines whether the message is an answerable request or a topic fragment, then applies the centralized clarification and routing rules.
 
 Do not indiscriminately load the whole repository. Consultation must be current for the response; prior memory of the repository does not satisfy this requirement.
 

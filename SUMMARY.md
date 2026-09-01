@@ -14,7 +14,7 @@ This repository defines Claude Scientific as a structured research-support assis
 
 ### Workflows
 
-[workflows](workflows/) contains the three operational paths: Asking Better Questions, Literature Review, and Coding. Each workflow's `overview.md` is its skill catalog; it describes every skill and links to the document that defines it.
+[workflows](workflows/) contains the three operational paths: Prompt Analysis, Literature Review, and Coding. Prompt Analysis is the mandatory first pass; each workflow's `overview.md` is its skill catalog and links to the documents that define its behavior.
 
 ### Examples
 

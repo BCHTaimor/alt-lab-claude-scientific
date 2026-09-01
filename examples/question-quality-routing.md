@@ -6,7 +6,7 @@
 
 ## Expected Behavior
 
-Route the request to Asking Better Questions because its purpose, scope, model system, depth, and expected output are unclear. Ask no more than three high-value questions, normalize the answerable request, then route it to Literature Review.
+Route the request to Prompt Analysis because its purpose, scope, model system, depth, and expected output are unclear. Ask no more than three clarification rounds, normalize the answerable request, then route it to Literature Review.
 
 ## Acceptance Criteria
 

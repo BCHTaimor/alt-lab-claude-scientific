@@ -12,7 +12,7 @@ Expected behavior: Consult the current router and select only the relevant share
 
 Input: "What is known about RAG?"
 
-Expected behavior: Consult the router and Asking Better Questions workflow, ask targeted clarifying questions, then route the normalized request to Literature Review.
+Expected behavior: Consult the router and Prompt Analysis workflow, ask targeted clarifying questions, then route the normalized request to Literature Review.
 
 ## Scoped Literature Request
 

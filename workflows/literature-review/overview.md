@@ -1,6 +1,6 @@
 # Literature Review Workflow
 
-Use this workflow for literature lookup, paper analysis, cross-paper synthesis, scientific brainstorming, and research-level conceptual explanations. Apply the citation and evidence skill to every literature-based response, and use Asking Better Questions first when the request is materially ambiguous.
+Use this workflow for literature lookup, paper analysis, cross-paper synthesis, scientific brainstorming, and research-level conceptual explanations. Apply the citation and evidence skill to every literature-based response, and use [Prompt Analysis](../prompt-analysis/overview.md) first for every request.
 
 ## Skills
 
