@@ -2,6 +2,12 @@
 
 Ask concise questions that unlock the next workflow. Prefer questions about the user's objective over generic requests for more detail.
 
+## Clarification Limits
+
+Use no more than three clarification rounds, with no more than three high-value questions in each round. Stop asking as soon as the request is sufficiently specified.
+
+After the third round, record reasonable assumptions and any remaining material uncertainty. Proceed with the selected workflow when it is safe to do so; if a material blocker makes progress unsafe or impossible, state that specific blocker rather than opening another clarification round.
+
 ## Clarification Patterns
 
 - Literature review: What decision or discussion should this literature review support, and should it prioritize foundational work, recent work, or both?
@@ -15,10 +21,10 @@ Restate the request in this form before routing it:
 
 ```text
 Goal:
-Scope:
+Context and scope:
 Constraints:
 Expected output:
 Selected workflow:
 ```
 
-If a request is already answerable, keep this normalization internal and proceed directly to the selected workflow.
+Once this brief is sufficiently complete, proceed directly to the selected workflow. Do not ask for separate permission to proceed.

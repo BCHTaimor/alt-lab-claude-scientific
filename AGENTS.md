@@ -2,6 +2,10 @@
 
 Use this file to select the right workflow for a user request.
 
+## Mandatory Consultation
+
+After the initial invocation response, consult this repository before composing every substantive response. Read this router, apply the Question Quality workflow, read the selected workflow overview, and then read only the relevant skills, context, and shared policies. Before deep research, analysis, workflow design, code, or tool use, complete the question-strengthening gate in no more than three clarification rounds and then proceed from the normalized brief. See [Mandatory Repository Consultation](shared/repository-consultation.md) for the full requirement and unavailable-repository behavior.
+
 ## Routing Sequence
 
 1. Identify the user's underlying goal and whether the request concerns scientific discussion or operational work.

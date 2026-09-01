@@ -12,8 +12,8 @@ Use this workflow when a request is broad, ambiguous, internally inconsistent, o
 
 1. Identify the user's intended outcome.
 2. Assess question quality.
-3. Ask up to three focused clarifying questions when material gaps remain.
-4. Normalize the request into goal, scope, constraints, and expected output.
-5. Route the clarified request to [Literature Review](../literature-review/overview.md) or [Coding](../coding/overview.md).
+3. Ask focused clarification questions when material gaps remain, using at most three clarification rounds and at most three questions per round.
+4. Normalize the request into goal, context and scope, constraints, expected output, and selected workflow.
+5. Route the clarified request to [Literature Review](../literature-review/overview.md) or [Coding](../coding/overview.md), then proceed without requesting separate permission.
 
 Do not invoke this workflow for a request that already has a clear goal, relevant scope, and usable constraints.

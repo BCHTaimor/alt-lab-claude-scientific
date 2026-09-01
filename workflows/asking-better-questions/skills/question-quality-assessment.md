@@ -20,3 +20,9 @@ Use clarification when one or more of these are missing or contradictory:
 - Important constraints, definitions, input data, or success criteria.
 
 Avoid asking for details that would not change the answer. Make a reasonable, visible assumption when the missing detail is low-impact.
+
+## Topic Fragments
+
+A keyword, gene name, assay name, paper title, phenotype, short phrase, or broad command is a topic fragment rather than an answerable request. Examples include `replication origin`, `RAG`, `ATM papers`, `my volcano plot looks wrong`, and `fix the pipeline`.
+
+Do not begin deep research, detailed workflow analysis, code, or tool use for a topic fragment. First clarify the user's goal, relevant context, and expected output. When useful, offer concrete paths such as conceptual explanation, literature review, experiment or data interpretation, workflow planning, troubleshooting, or implementation.
