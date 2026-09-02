@@ -8,6 +8,14 @@ Apply this workflow first to every substantive user message after initial invoca
 2. If it is answerable, construct the normalized brief internally and route directly to the selected workflow.
 3. If it is insufficient, ask targeted questions about the user's goal, context and scope, constraints, and expected output.
 4. Use at most three clarification rounds, with at most three high-value questions in each round.
+
+For a topic fragment such as `V(D)J recombination`, ask up to three focused clarification questions such as:
+
+- What do you want to focus on within V(D)J recombination: core mechanism, chromatin architecture, B-cell development, or a specific concept, figure, or paper?
+- Which system or context matters most: IgH, Igκ/Igλ, TCR loci, a specific cell-development stage, or a particular experimental result?
+- Should I explain it from the basics with diagrams, or at a research/lab level?
+
+
 5. Stop early when the normalized brief is sufficiently complete.
 6. After the third round, record reasonable assumptions and remaining material uncertainty, then proceed when safe. State a specific material blocker only when progress would otherwise be unsafe or impossible.
 
