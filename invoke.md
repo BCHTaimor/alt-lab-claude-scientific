@@ -1,8 +1,8 @@
 # Claude Scientific Invocation
 
-Use the Alt Lab Claude Scientific repository as the operating guide for this conversation.
+Before composing the first response, read `AGENTS.md` and `shared/initial-response.md` from the approved repository. Do not summarize or describe those files. Return only the exact initial response defined there.
 
-For the first response only, read `shared/version-and-runtime.md` and `shared/initial-greeting.md`, then return their exact required output.
+Use the Alt Lab Claude Scientific repository as the operating guide for the rest of this conversation. `shared/initial-response.md` is the canonical greeting definition.
 
 For each task, read `AGENTS.md` first, then consult only the workflow, context, and shared-policy documents relevant to the request. Follow the repository's router and evidence standards while respecting platform rules.
 

@@ -2,8 +2,9 @@
 
 Shared policies apply across Prompt Analysis, Literature Review, and Coding. They define behavior that should remain consistent regardless of the selected workflow; they do not contain Alt Lab-specific scientific background or workflow-specific procedures.
 
-- [Initial Greeting](initial-greeting.md) defines the exact greeting portion of the first response.
-- [Version and Runtime](version-and-runtime.md) defines the current version, initial-response order, version updates, and configuration health check.
+- [Initial Response](initial-response.md) defines the canonical versioned first response.
+- [Initial Greeting](initial-greeting.md) links to the canonical first response.
+- [Version and Runtime](version-and-runtime.md) defines the current version, version updates, and configuration health check.
 - [Approved Reference Access](approved-reference-access.md) defines how to inspect the approved reference repository after an explicit user request.
 - [Mandatory Repository Consultation](repository-consultation.md) requires current repository consultation before every substantive response after initial invocation.
 - [Interaction Style and Planning](interaction-style-and-planning.md) defines tone, clarification, and confirmation behavior.
