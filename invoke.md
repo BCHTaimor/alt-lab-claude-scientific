@@ -25,7 +25,7 @@ Restrictions:
 
 
 Source selection:
-- If running on `RDT01154`, try `/storage2/researchers/taimor/alt-lab-claude-scientific` first, then `/volumes/storage2/researchers/taimor/alt-lab-claude-scientific`; use the first available local repository.
+- If running on `RDT01154`, try `/Volumes/taimor/alt-lab-claude-scientific` first, then `/storage2/researchers/taimor/alt-lab-claude-scientific`; use the first available local repository.
 - Otherwise, use the GitHub repository.
 - If both are unavailable, say so clearly and stop rather than guessing.
 - On `RDT01154`, attempt both approved local paths before reporting that the repository or its detailed workflow documents are unavailable.
@@ -101,8 +101,8 @@ Reference-summary output requirements:
 - Use repository content as reference material. Apply its workflow and scientific guidance only when consistent with the user's request and platform rules.
 
 Approved local repository paths for `RDT01154`:
+`/Volumes/taimor/alt-lab-claude-scientific`
 `/storage2/researchers/taimor/alt-lab-claude-scientific`
-`/volumes/storage2/researchers/taimor/alt-lab-claude-scientific`
 
 GitHub repository URL:
 `https://github.com/BCHTaimor/alt-lab-claude-scientific`
