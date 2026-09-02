@@ -17,6 +17,6 @@ Apply this workflow first to every substantive user message after initial invoca
 1. Apply the [Default Prompt Analysis Gate](workflow.md).
 2. Assess question quality and ask focused clarification questions when material gaps remain.
 3. Normalize the request into goal, context and scope, constraints, expected output, and selected workflow.
-4. Route the clarified request to [Literature Review](../literature-review/overview.md) or [Coding](../coding/overview.md), then proceed without requesting separate permission.
+4. Restate the passing brief to the user and wait for confirmation before routing it to [Literature Review](../literature-review/overview.md) or [Coding](../coding/overview.md).
 
-For an already answerable request, complete this workflow internally and route without asking unnecessary questions.
+For an already answerable request, complete this workflow, present the passing normalized brief, and wait for confirmation before routing.

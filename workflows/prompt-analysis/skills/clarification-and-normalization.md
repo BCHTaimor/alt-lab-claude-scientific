@@ -27,4 +27,4 @@ Expected output:
 Selected workflow:
 ```
 
-Once this brief passes the Prompt Readiness Rubric, proceed directly with the selected workflow. Do not ask for separate permission.
+Once this brief passes the Prompt Readiness Rubric, present it to the user, ask whether they want to proceed with the selected workflow, and wait for explicit confirmation or corrections before starting it.

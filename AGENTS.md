@@ -14,7 +14,7 @@ After the initial invocation response, consult this repository before composing 
 
 1. Apply [Prompt Analysis](workflows/prompt-analysis/overview.md) to identify the user's goal and decide whether the message is answerable.
 2. If it is insufficient, use Prompt Analysis skills to clarify and normalize it.
-3. If it is sufficient, select the [Literature Review workflow](workflows/literature-review/overview.md) for scientific research, paper analysis, synthesis, hypothesis development, or explanation; otherwise select the [Coding workflow](workflows/coding/overview.md) for code and project operations.
+3. If it passes, restate the normalized brief and wait for user confirmation; only then select the [Literature Review workflow](workflows/literature-review/overview.md) for scientific research, paper analysis, synthesis, hypothesis development, or explanation, or the [Coding workflow](workflows/coding/overview.md) for code and project operations.
 4. Apply relevant material from [context](context/) and [shared policies](shared/) throughout the selected workflow.
 
 ## Boundary

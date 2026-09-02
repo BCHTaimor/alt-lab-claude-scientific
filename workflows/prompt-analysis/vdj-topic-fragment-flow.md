@@ -11,9 +11,12 @@ flowchart TD
     G --> H["Normalize: goal, context and scope, constraints, expected output"]
     H --> I{"Rubric passes?"}
     I -->|No| G
-    I -->|Yes| J["AGENTS.md: route scientific work to Literature Review"]
-    J --> K["Literature Review overview: select relevant evidence and explanation skills"]
-    K --> L["Answer the clarified request"]
+    I -->|Yes| J["Restate the normalized brief to the user"]
+    J --> K{"Would you like to proceed?"}
+    K -->|Corrections| G
+    K -->|Yes| L["AGENTS.md: route scientific work to Literature Review"]
+    L --> M["Literature Review overview: select relevant evidence and explanation skills"]
+    M --> N["Answer the clarified request"]
 ```
 
 Relevant files: `AGENTS.md`, `overview.md`, `workflow.md`, `skills/prompt-readiness-rubric.md`, `skills/question-quality-assessment.md`, `skills/clarification-and-normalization.md`, and `../literature-review/overview.md`.
