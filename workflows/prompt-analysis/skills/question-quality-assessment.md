@@ -1,6 +1,6 @@
 # Question Quality Assessment
 
-Assess whether the request provides enough information to produce a useful answer.
+Assess whether the request passes the [Prompt Readiness Rubric](prompt-readiness-rubric.md) before any work begins.
 
 ## Sufficient Questions
 

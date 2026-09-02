@@ -5,10 +5,12 @@ Apply this workflow first to every substantive user message after initial invoca
 ## Skills
 
 - [Default Prompt Analysis Gate](workflow.md): Defines the mandatory first-pass decision sequence, the three-round limit, and the required normalized brief.
+- [Prompt Readiness Rubric](skills/prompt-readiness-rubric.md): Defines the required pass/fail criteria before any workflow is selected.
 - [Question Quality Assessment](skills/question-quality-assessment.md): Determines whether a request has a clear goal, usable scope, and sufficient constraints to proceed without a consequential guess.
 - [Clarification and Normalization](skills/clarification-and-normalization.md): Elicits only high-value missing information and restates the request in a concise, routable form.
 - [Examples of Good Questions](skills/example-good-questions.md): Shows the difference between vague and answerable scientific and coding questions, with concrete examples to model.
 - [Prompt Analysis Examples](examples.md): Links the repository-wide acceptance examples that verify this workflow's behavior.
+- [V(D)J Topic-Fragment Flow](vdj-topic-fragment-flow.md): Shows the complete path from a topic fragment through clarification and routing.
 
 ## Workflow
 

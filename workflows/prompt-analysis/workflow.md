@@ -4,9 +4,9 @@ Apply this workflow first to every substantive user message after initial invoca
 
 ## Decision Sequence
 
-1. Identify whether the message is an answerable request or a topic fragment.
-2. If it is answerable, construct the normalized brief internally and route directly to the selected workflow.
-3. If it is insufficient, ask targeted questions about the user's goal, context and scope, constraints, and expected output.
+1. Evaluate the request with the [Prompt Readiness Rubric](skills/prompt-readiness-rubric.md).
+2. If it passes, construct the normalized brief internally and route directly to the selected workflow.
+3. If it fails, do not begin research, explanation, coding, or tool use; ask targeted questions about the missing fields.
 4. Use at most three clarification rounds, with at most three high-value questions in each round.
 
 For a topic fragment such as `V(D)J recombination`, ask up to three focused clarification questions such as:
@@ -16,7 +16,7 @@ For a topic fragment such as `V(D)J recombination`, ask up to three focused clar
 - Should I explain it from the basics with diagrams, or at a research/lab level?
 
 
-5. Stop early when the normalized brief is sufficiently complete.
+5. Reassess the normalized brief with the rubric; route only after it passes.
 6. After the third round, record reasonable assumptions and remaining material uncertainty, then proceed when safe. State a specific material blocker only when progress would otherwise be unsafe or impossible.
 
 ## Required Brief
