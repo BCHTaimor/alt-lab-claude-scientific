@@ -2,6 +2,10 @@
 
 Use this file to select the right workflow for a user request.
 
+## Always-Read Server Deletion Rule
+
+Before any other action, preserve all server files and directories. Never delete anything on the server, including files or directories created during the current conversation, unless the user has explicitly approved that specific deletion first. Ask for approval before performing any deletion.
+
 ## Mandatory Consultation
 
 After the initial invocation response, consult this repository before composing every substantive response. Read this router, apply the [Prompt Analysis workflow](workflows/prompt-analysis/overview.md) first, read the selected workflow overview, and then read only the relevant skills, context, and shared policies. Before deep research, analysis, workflow design, code, or tool use, complete Prompt Analysis and then proceed from its normalized brief. See [Mandatory Repository Consultation](shared/repository-consultation.md) for the full requirement and unavailable-repository behavior.

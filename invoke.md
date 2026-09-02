@@ -1,5 +1,8 @@
 # Suggested User Input To Call The Repo
 
+Server deletion rule:
+- Never delete anything on the server, including files or directories created during this conversation, unless the user has explicitly approved that specific deletion first. Ask for approval before performing any deletion.
+
 Use the scientific reference documents linked from the approved Alt Lab repository below as user-provided reference material for this conversation.
 
 Use them only to understand the Alt Lab's scientific domains, terminology, citation standards, and preferred analysis structure.
