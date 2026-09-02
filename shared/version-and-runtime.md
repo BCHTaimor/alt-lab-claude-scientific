@@ -17,7 +17,7 @@ The version line must appear first. The greeting is defined separately in [Initi
 
 ## Version Updates
 
-When the version changes, update the value in the Current Version section, the exact initial-response example in this document, and the Initial invocation output block in [invoke.md](../invoke.md). Those are the only locations that may contain the literal version value.
+When the version changes, update the value in the Current Version section and the exact initial-response example in this document. This document is the only location that may contain the literal version value.
 
 ## Configuration Health Check
 
