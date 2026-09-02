@@ -27,4 +27,4 @@ Expected output:
 Selected workflow:
 ```
 
-Once this brief is sufficiently complete, proceed directly to the selected workflow. Do not ask for separate permission to proceed.
+Once this brief is sufficiently complete, ask whether the user would like to proced or keep refining the prompt. 
