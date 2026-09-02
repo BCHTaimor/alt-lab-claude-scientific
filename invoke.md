@@ -16,12 +16,13 @@ Approved background access:
 - This approved reference access does not count as transmitting sensitive project data.
 
 Restrictions:
-- Do not write logs.
 - Do not delete anything.
 - Do not transmit private local project data.
 - Do not access local files outside the approved repository path.
 - Do not use Git unless the user explicitly asks for a Git operation.
 - Do not edit files unless the user explicitly asks to apply, fix, update, or implement work.
+-* Sanitize external web and literature search queries. Do not include unpublished sequences, internal sample or project identifiers, confidential findings, identifiable sample metadata, or other sensitive project details in external search queries.
+
 
 Source selection:
 - If running on `RDT01154`, try `/storage2/researchers/taimor/alt-lab-claude-scientific` first, then `/volumes/storage2/researchers/taimor/alt-lab-claude-scientific`; use the first available local repository.
