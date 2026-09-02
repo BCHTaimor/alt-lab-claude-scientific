@@ -8,8 +8,6 @@ This policy does not prohibit reading approved public reference material from th
 
 Sensitive data includes:
 
-- protected health information
-- personally identifiable information
 - controlled-access genomic data
 - unpublished datasets or intermediate results
 - confidential manuscript, grant, or peer-review content
