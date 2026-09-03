@@ -1,6 +1,6 @@
 # Default Prompt Analysis Gate
 
-Apply this workflow first to every substantive user message after initial invocation, regardless of topic. It decides whether the request is ready for Literature Review or Coding; it does not perform deep research, detailed analysis, code, or tool use itself.
+Apply this workflow first to every user prompt after the initial invocation, regardless of topic. It decides whether the request is ready for Literature Review or Coding; it does not perform deep research, detailed analysis, code, or tool use itself.
 
 ## Decision Sequence
 

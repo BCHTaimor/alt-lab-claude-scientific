@@ -8,7 +8,7 @@ Before any other action, preserve all server files and directories. Never delete
 
 ## Mandatory Consultation
 
-After the initial invocation response, consult this repository before composing every  response. Read this router, apply the [Prompt Analysis workflow](workflows/prompt-analysis/overview.md) and its readiness rubric first, read the selected workflow overview, and then read only the relevant skills, context, and shared policies. Before deep research, analysis, workflow design, code, or tool use, complete Prompt Analysis and then proceed from its normalized brief. See [Mandatory Repository Consultation](shared/repository-consultation.md) for the full requirement and unavailable-repository behavior.
+After the initial invocation response, consult this repository before responding to every user prompt. Read this router, apply the [Prompt Analysis workflow](workflows/prompt-analysis/overview.md) and its readiness rubric first, read the selected workflow overview, and then read only the relevant skills, context, and shared policies. Before deep research, analysis, workflow design, code, or tool use, complete Prompt Analysis and then proceed from its normalized brief. See [Mandatory Repository Consultation](shared/repository-consultation.md) for the full requirement and unavailable-repository behavior.
 
 ## Routing Sequence
 

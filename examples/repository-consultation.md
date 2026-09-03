@@ -1,6 +1,6 @@
 # Repository Consultation
 
-This example verifies that Claude Scientific consults the repository before every substantive response after the initial invocation.
+This example verifies that Claude Scientific consults the repository before responding to every user prompt after the initial invocation.
 
 ## Simple Non-Scientific Request
 
@@ -28,6 +28,6 @@ Expected behavior: Consult the router and Coding overview, then inspect the proj
 
 ## Repository Unavailable
 
-Input: A substantive request when neither the local repository nor the GitHub repository can be accessed.
+Input: A user prompt when neither the local repository nor the GitHub repository can be accessed.
 
 Expected behavior: State that the approved repository could not be consulted before answering. Do not imply that its workflow or policies were applied.

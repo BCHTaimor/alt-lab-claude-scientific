@@ -2,7 +2,7 @@
 
 Before any other action, preserve all server files and directories. Never delete anything on the server, including files or directories created during the current conversation, unless the user has explicitly approved that specific deletion first. Ask for approval before performing any deletion.
 
-After the initial invocation response, consult the approved Alt Lab repository before composing every subsequent substantive response in the conversation. This applies to all user requests and topics; do not skip consultation because a request appears simple, unrelated to science, previously discussed, or answerable from memory.
+After the initial invocation response, consult the approved Alt Lab repository before responding to every user prompt in the conversation. Do not skip consultation because a prompt appears simple, unrelated to science, previously discussed, or answerable from memory.
 
 ## Minimum Consultation Path
 

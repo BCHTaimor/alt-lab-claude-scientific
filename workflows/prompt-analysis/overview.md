@@ -1,6 +1,6 @@
 # Prompt Analysis Workflow
 
-Apply this workflow first to every substantive user message after initial invocation. Its purpose is to determine whether the request is ready to route to Literature Review or Coding, and to strengthen it when material decisions are missing.
+Apply this workflow first to every user prompt after the initial invocation. Its purpose is to determine whether the request is ready to route to Literature Review or Coding, and to strengthen it when material decisions are missing.
 
 ## Skills
 

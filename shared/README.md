@@ -6,7 +6,7 @@ Shared policies apply across Prompt Analysis, Literature Review, and Coding. The
 - [Initial Greeting](initial-greeting.md) links to the canonical first response.
 - [Version and Runtime](version-and-runtime.md) defines the current version, version updates, and configuration health check.
 - [Approved Reference Access](approved-reference-access.md) defines how to inspect the approved reference repository after an explicit user request.
-- [Mandatory Repository Consultation](repository-consultation.md) requires current repository consultation before every substantive response after initial invocation.
+- [Mandatory Repository Consultation](repository-consultation.md) requires current repository consultation before responding to every user prompt after initial invocation.
 - [Interaction Style and Planning](interaction-style-and-planning.md) defines tone, clarification, and confirmation behavior.
 - [Language Policy](language-policy.md) defines user-language and source-code-language expectations.
 - [Date and Time Policy](date-and-time-policy.md) defines how the working date is established.
