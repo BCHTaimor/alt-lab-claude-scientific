@@ -16,12 +16,12 @@ This repository defines Alt Lab LLM Agent 2.0 as a manager-and-specialist resear
 
 ## Runtime adapters
 
-- Codex discovers [AGENTS.md](AGENTS.md).
+- Claude Cowork installs the `alt-lab-llm-agent` plugin via [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json).
+- Codex installs the same plugin via [.agents/plugins/marketplace.json](.agents/plugins/marketplace.json), or discovers [AGENTS.md](AGENTS.md) directly in agent mode.
 - Claude Code discovers [CLAUDE.md](CLAUDE.md) and project specialists under `.claude/agents/`.
-- ChatGPT web uses [adapters/web/chatgpt.md](adapters/web/chatgpt.md).
-- Claude web uses [adapters/web/claude.md](adapters/web/claude.md).
+- ChatGPT web uses [adapters/web/chatgpt.md](adapters/web/chatgpt.md) — the only remaining web-injection prompt, since Claude and Codex install the plugin instead.
 
-Agent mode can use real delegation when supported. Web injection mode applies the same responsibilities within one conversation, attempts an approved local-server or GitHub refresh, and reports whether that refresh succeeded. It must not claim independent agents or repository access that did not occur.
+Agent and plugin modes can use real delegation when supported. Web injection mode applies the same responsibilities within one conversation, attempts an approved local-server or GitHub refresh, and reports whether that refresh succeeded. It must not claim independent agents or repository access that did not occur.
 
 ## Acceptance tests
 

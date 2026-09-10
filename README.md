@@ -6,10 +6,11 @@ This is a discussion-and-research workflow, not a manuscript-writing workflow. A
 
 ## Operating Modes
 
-Alt Lab LLM Agent supports two ways of working:
+Alt Lab LLM Agent supports several ways of working:
 
+- **Plugin mode:** Install the `alt-lab-llm-agent` plugin directly from this repository's GitHub URL — in Claude Cowork via Customize → Plugins → Add marketplace, or in Codex via Settings/Admin → Plugins → Add → Import marketplace. No prompt to paste and no repository access needed at chat time. See [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json) (Cowork) and [.agents/plugins/marketplace.json](.agents/plugins/marketplace.json) (Codex).
 - **Agent mode:** Open this repository in Codex or Claude Code. Codex uses [AGENTS.md](AGENTS.md); Claude Code uses [CLAUDE.md](CLAUDE.md). The manager can delegate bounded tasks to specialist agents when the runtime supports delegation.
-- **Web injection mode:** Use an ordinary ChatGPT or Claude browser chat. Copy the appropriate self-contained prompt from [ChatGPT](adapters/web/chatgpt.md) or [Claude](adapters/web/claude.md). The prompt attempts to refresh from the approved server paths or public GitHub when access exists, then falls back to its embedded baseline. Specialist roles run within one conversation rather than as independent agents.
+- **Web injection mode:** Use an ordinary ChatGPT browser chat. Copy the self-contained prompt from [ChatGPT](adapters/web/chatgpt.md). The prompt attempts to refresh from the approved server paths or public GitHub when access exists, then falls back to its embedded baseline. Specialist roles run within one conversation rather than as independent agents. Claude and Codex users should use Plugin mode instead of a pasted prompt.
 
 See [invoke.md](invoke.md) for the short setup guide.
 
@@ -116,4 +117,4 @@ Configuration health-check behavior is defined in [Version and Runtime](shared/v
 
 ## Bottom Line
 
-Alt Lab LLM Agent is one consistent system delivered through multiple runtimes. In Codex and Claude Code it can operate as a manager with bounded specialists. In ordinary web chats, portable prompts preserve the same identity, routing logic, scientific standards, and safety boundaries without pretending to run independent agents.
+Alt Lab LLM Agent is one consistent system delivered through multiple runtimes. As a Cowork or Codex plugin, and in Codex and Claude Code agent mode, it can operate as a manager with bounded specialists. In an ordinary ChatGPT web chat, a portable prompt preserves the same identity, routing logic, scientific standards, and safety boundaries without pretending to run independent agents.

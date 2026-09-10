@@ -1,0 +1,6 @@
+{
+  "name": "alt-lab-llm-agent",
+  "version": "2.0.0",
+  "description": "Alt Lab LLM Agent — the Alt Lab's manager and scientific research-support assistant. Routes literature and coding requests, enforces citation and evidence standards, and applies the lab's domain priorities (V(D)J recombination, CSR, SHM, chromatin regulation, recurrent DSB-cluster genes, HIV-vaccine antibody biology).",
+  "skills": "./skills/"
+}

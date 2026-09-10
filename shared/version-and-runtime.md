@@ -10,8 +10,9 @@ as `{Name from IDENTITY.md} version {Current Version Number}`, currently
 `Alt Lab LLM Agent version 2.0`.
 
 Version 2.0 introduces a manager-and-specialist architecture, shared identity
-files, Codex and Claude Code adapters, and separate ChatGPT and Claude web
-injection prompts.
+files, Codex and Claude Code adapters, a ChatGPT web injection prompt, and
+installable Cowork and Codex plugin packaging (Claude and Codex install the
+plugin directly rather than using a pasted web-injection prompt).
 
 ## Initial Response
 
@@ -25,8 +26,8 @@ exact initial-response block in [Initial Response](initial-response.md).
 
 When the name changes, update [IDENTITY.md](../IDENTITY.md) and the exact
 initial-response block, then update the standalone copies that cannot read
-either file at runtime: `adapters/web/chatgpt.md`, `adapters/web/claude.md`,
-and `claude_scientific_overview.html`. [check_repository.sh](../validation/check_repository.sh)
+either file at runtime: `adapters/web/chatgpt.md` and
+`claude_scientific_overview.html`. [check_repository.sh](../validation/check_repository.sh)
 derives the expected name and version from `IDENTITY.md` and this document
 and fails if those standalone copies fall out of sync.
 

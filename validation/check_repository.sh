@@ -18,8 +18,11 @@ required_files=(
     ".claude/agents/literature-review.md"
     ".claude/agents/coding.md"
     "adapters/web/chatgpt.md"
-    "adapters/web/claude.md"
     "claude_scientific_overview.html"
+    ".claude-plugin/marketplace.json"
+    "alt-lab-llm-agent/.claude-plugin/plugin.json"
+    ".agents/plugins/marketplace.json"
+    "alt-lab-llm-agent/.codex-plugin/plugin.json"
 )
 
 for required_file in "${required_files[@]}"; do
@@ -37,8 +40,16 @@ version_text="${agent_name} version ${version_number}"
 grep -Fq "$version_text" shared/version-and-runtime.md
 grep -Fq "$version_text" shared/initial-response.md
 grep -Fq "$version_text" adapters/web/chatgpt.md
-grep -Fq "$version_text" adapters/web/claude.md
 grep -Fq "$version_text" claude_scientific_overview.html
+
+for plugin_manifest in ".claude-plugin/marketplace.json" "alt-lab-llm-agent/.claude-plugin/plugin.json" ".agents/plugins/marketplace.json" "alt-lab-llm-agent/.codex-plugin/plugin.json"; do
+    python3 -m json.tool < "$plugin_manifest" > /dev/null || {
+        echo "Malformed JSON in plugin manifest: $plugin_manifest" >&2
+        exit 1
+    }
+done
+grep -Fq "$version_number" alt-lab-llm-agent/.claude-plugin/plugin.json
+grep -Fq "$version_number" alt-lab-llm-agent/.codex-plugin/plugin.json
 
 if rg -q 'Would you like to proceed with this selected workflow\?|wait for explicit confirmation before starting' workflows/prompt-analysis; then
     echo "Obsolete routine confirmation gate remains in Prompt Analysis." >&2
@@ -49,13 +60,12 @@ xmllint --html --noout claude_scientific_overview.html 2>/dev/null
 
 grep -Fq 'document.querySelectorAll("[data-copy-target]")' claude_scientific_overview.html
 grep -Fq 'data-copy-target="chatgpt-prompt"' claude_scientific_overview.html
-grep -Fq 'data-copy-target="claude-prompt"' claude_scientific_overview.html
 
 github_repository='https://github.com/BCHTaimor/alt-lab-claude-scientific'
 server_repository_primary='/Volumes/taimor/alt-lab-claude-scientific'
 server_repository_secondary='/storage2/researchers/taimor/alt-lab-claude-scientific'
 
-for discovery_copy in adapters/web/chatgpt.md adapters/web/claude.md claude_scientific_overview.html; do
+for discovery_copy in adapters/web/chatgpt.md claude_scientific_overview.html; do
     grep -Fq 'RDT01154' "$discovery_copy"
     grep -Fq "$github_repository" "$discovery_copy"
     grep -Fq "$server_repository_primary" "$discovery_copy"
