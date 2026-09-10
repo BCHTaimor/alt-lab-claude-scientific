@@ -281,9 +281,18 @@ Hi Alt Lab member. I'm the Alt Lab LLM Agent, your research support manager for 
 </tr>
 
 <tr valign="top">
-<td class="nav-cell"><b>Try it yourself</b></td>
+<td class="nav-cell"><b>Try it yourself (GitHub)</b></td>
 <td class="content-cell">
-<p>Get the packaged <code>alt-lab-llm-agent.plugin</code> file (built from the <code>alt-lab-llm-agent/</code> directory in this repository) into a Cowork chat. Cowork shows it as a rich preview with an install button &mdash; press it to add the plugin to your own account. Try it before asking your admin to roll it out lab-wide.</p>
+<p>In Claude, open the <b>Customize</b> menu (in Cowork, open the Cowork tab first, then Customize) and go to the <b>Plugins</b> tab. Under Personal plugins, click <b>+</b> and choose <b>Add marketplace</b>. Paste this repository's URL:</p>
+<pre>https://github.com/BCHTaimor/alt-lab-claude-scientific</pre>
+<p>This repository's <code>.claude-plugin/marketplace.json</code> catalogs the <code>alt-lab-llm-agent</code> plugin, so it will appear once the marketplace is added &mdash; select it and install. Because this reads from GitHub, it only picks up whatever has actually been pushed to the repository, so make sure your changes are committed and pushed first.</p>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Try it yourself (file)</b></td>
+<td class="content-cell">
+<p>Alternatively, get the packaged <code>alt-lab-llm-agent.plugin</code> file (built from the <code>alt-lab-llm-agent/</code> directory in this repository) into a Cowork chat, or use the same Plugins tab's option to upload a custom plugin file directly. No GitHub push required for this route, but it also will not stay in sync with later repository changes on its own.</p>
 </td>
 </tr>
 
