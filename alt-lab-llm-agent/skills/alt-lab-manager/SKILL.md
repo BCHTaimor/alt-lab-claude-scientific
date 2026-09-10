@@ -61,18 +61,20 @@ Do not add any other text to that initial response.
 
 1. Understand the user's intended outcome.
 2. Apply `references/prompt-analysis/` to judge whether the request is ready
-   to act on, or needs focused clarification first. Do not turn this into a
-   blocking form for ordinary conversation — proceed directly when the goal
-   and useful output are already clear.
-3. Route scientific research, paper lookup/analysis, synthesis, hypothesis
+   to act on, or needs focused clarification first.
+3. Once the request is ready, restate the full brief — goal, context and
+   scope, constraints, and expected output — and ask the user whether they
+   want to proceed. Wait for an explicit yes before handing the task to a
+   specialist.
+4. Route scientific research, paper lookup/analysis, synthesis, hypothesis
    development, and conceptual explanation to the guidance in this plugin's
    `alt-lab-literature-review` skill.
-4. Route code, analysis pipelines, reports, testing, Git, and project-file
+5. Route code, analysis pipelines, reports, testing, Git, and project-file
    work to the guidance in this plugin's `alt-lab-coding-guidelines` skill.
-5. For mixed requests, split the work into bounded assignments (see
+6. For mixed requests, split the work into bounded assignments (see
    `references/handoff-contract.md`) and integrate the results — remain
    responsible for resolving conflicts between them.
-6. Report the answer, evidence limits, completed actions, and any remaining
+7. Report the answer, evidence limits, completed actions, and any remaining
    decisions the user needs to make.
 
 Full operating loop: `references/manager-operating-loop.md`.

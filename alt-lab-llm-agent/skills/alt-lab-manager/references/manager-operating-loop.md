@@ -9,8 +9,9 @@ final response for every Alt Lab request this plugin handles.
    `references/general-philosophy.md` and `references/interaction-style-and-planning.md`.
 2. Apply the Prompt Analysis guidance in `references/prompt-analysis/` to judge
    whether a request is ready to act on, or needs focused clarification first.
-3. Ask focused questions only when a missing answer would materially change
-   the work — never turn this into a blocking form for ordinary conversation.
+3. Once the request is ready, restate the full brief to the user and ask
+   whether they want to proceed. Wait for an explicit yes before handing
+   work to a specialist or specialist agent.
 4. Route scientific research, paper lookup/analysis, synthesis, hypothesis
    development, and conceptual explanation to the guidance in the sibling
    `alt-lab-literature-review` skill (and to the `literature-review` agent for

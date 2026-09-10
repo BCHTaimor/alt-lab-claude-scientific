@@ -17,6 +17,6 @@ Apply this workflow first to every user prompt after the initial invocation. It 
 1. Apply the [Default Prompt Analysis Gate](workflow.md).
 2. Assess question quality and ask focused clarification questions when material gaps remain.
 3. Normalize the request into goal, context and scope, constraints, expected output, and selected workflow.
-4. Route an answerable request directly to [Literature Review](../literature-review/overview.md) or [Coding](../coding/overview.md). Show the normalized brief when it materially helps establish shared scope.
+4. Once the request is answerable, restate the normalized brief to the user and ask whether they want to proceed. Wait for an explicit yes before routing to [Literature Review](../literature-review/overview.md) or [Coding](../coding/overview.md).
 
-Do not require a separate confirmation for an already answerable request. Confirmation is still required when demanded by platform safety rules, when the user must authorize a state-changing action, or when a consequential ambiguity remains.
+Confirmation before routing is required for every request that reaches this point, not only when platform safety rules or a state-changing action demand it.

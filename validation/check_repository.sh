@@ -51,8 +51,17 @@ done
 grep -Fq "$version_number" alt-lab-llm-agent/.claude-plugin/plugin.json
 grep -Fq "$version_number" alt-lab-llm-agent/.codex-plugin/plugin.json
 
-if rg -q 'Would you like to proceed with this selected workflow\?|wait for explicit confirmation before starting' workflows/prompt-analysis; then
-    echo "Obsolete routine confirmation gate remains in Prompt Analysis." >&2
+# Reversed 2026-09-10 at the user's request: the manager now restates the
+# brief and waits for explicit confirmation before handing work to a
+# specialist agent. The check below enforced the opposite ("no confirmation
+# gate") policy; kept here commented out, not deleted, for reference.
+# if rg -q 'Would you like to proceed with this selected workflow\?|wait for explicit confirmation before starting' workflows/prompt-analysis; then
+#     echo "Obsolete routine confirmation gate remains in Prompt Analysis." >&2
+#     exit 1
+# fi
+
+if ! rg -q 'Would you like to proceed with this selected workflow\?|wait for explicit confirmation' workflows/prompt-analysis; then
+    echo "Required confirmation gate is missing from Prompt Analysis." >&2
     exit 1
 fi
 

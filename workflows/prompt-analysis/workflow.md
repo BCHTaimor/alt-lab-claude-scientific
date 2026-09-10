@@ -5,7 +5,7 @@ Apply this workflow first to every user prompt after the initial invocation, reg
 ## Decision Sequence
 
 1. Evaluate the request with the [Prompt Readiness Rubric](skills/prompt-readiness-rubric.md).
-2. If it passes, route directly. Restate the normalized brief only when it helps coordinate substantial work or expose assumptions.
+2. If it passes, restate the normalized brief to the user and ask for confirmation before selecting or handing off to another workflow.
 3. If it fails, do not begin research, explanation, coding, or tool use; ask targeted questions about the missing fields.
 4. Use at most three clarification rounds, with at most three high-value questions in each round.
 
@@ -16,7 +16,7 @@ For a topic fragment such as `V(D)J recombination`, ask up to three focused clar
 - Should I explain it from the basics with diagrams, or at a research/lab level?
 
 
-5. Reassess the normalized brief with the rubric; restate it only after it passes.
+5. Reassess the normalized brief with the rubric; restate it to the user once it passes.
 6. After the third round, record reasonable assumptions and remaining material uncertainty, then proceed when safe. State a specific material blocker only when progress would otherwise be unsafe or impossible.
 
 ## Required User-Facing Brief
@@ -29,4 +29,4 @@ Expected output:
 Selected workflow:
 ```
 
-Once the brief passes, start the selected workflow unless a platform rule requires confirmation, the task needs authorization for a state-changing action, or a consequential user decision remains unresolved.
+Once the brief passes, present it to the user and wait for explicit confirmation before starting the selected workflow or handing the task to Literature Review, Coding, or any other specialist agent. End the brief with: `Would you like to proceed with this selected workflow?`

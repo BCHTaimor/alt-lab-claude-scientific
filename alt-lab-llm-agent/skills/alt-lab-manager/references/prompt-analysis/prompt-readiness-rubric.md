@@ -9,6 +9,6 @@ A request passes Prompt Analysis only when it states all of the following:
 
 If any element is missing, the request fails Prompt Analysis. Do not begin research, explanation, coding, or tool use. Ask up to three focused clarification questions, then reassess the normalized brief.
 
-After a request passes, route it directly. Present the full brief when it would materially improve coordination, but do not turn it into a routine confirmation gate. Request confirmation only when required for safety, authorization, or a consequential unresolved choice.
+After a request passes, restate the full brief to the user, ask whether they want to proceed with the selected workflow, and wait for explicit confirmation before starting Literature Review, Coding, or handing the task to any other specialist agent.
 
 Keywords, gene names, assay names, paper titles, phenotypes, short phrases, and broad commands are topic fragments and fail this rubric until clarified.

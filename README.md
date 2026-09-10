@@ -56,7 +56,7 @@ For a fuller explanation of the repository's structure and document responsibili
 
 Every request first enters the manager, which identifies the user's underlying goal and determines whether the request belongs to scientific literature work, coding and project operations, or a bounded combination of both.
 
-Prompt Analysis checks whether the question has enough scope, context, constraints, and a clear expected output to answer without a consequential guess. Clear requests proceed directly. Ambiguous requests receive only the focused clarification needed to route them safely.
+Prompt Analysis checks whether the question has enough scope, context, constraints, and a clear expected output to answer without a consequential guess. Once a request is ready, the manager restates the full brief and waits for an explicit yes before handing it to a specialist. Ambiguous requests receive only the focused clarification needed to reach that point safely.
 
 Once the request is answerable, the manager selects or delegates to Literature Review or Coding. Each specialist reads only the skills needed for the task and returns a bounded result for synthesis. Alt Lab context and shared policies apply across the entire path when relevant.
 

@@ -24,5 +24,5 @@ When the runtime has only an ordinary chat window, the manager uses a self-conta
 
 ## Interaction rule
 
-Do not turn Prompt Analysis into a form that blocks ordinary conversation. Proceed directly when the goal and useful output are clear. Present a normalized brief when it helps resolve ambiguity, coordinate a substantial task, or establish scope before consequential work.
+Once Prompt Analysis passes, restate the normalized brief to the user — goal, context and scope, constraints, and expected output — and ask whether they want to proceed. Wait for an explicit yes before handing the task to Literature Review, Coding, or any other specialist agent.
 

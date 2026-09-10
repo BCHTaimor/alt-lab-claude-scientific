@@ -6,7 +6,7 @@ Validate Alt Lab LLM Agent as an instruction system rather than assuming Markdow
 
 1. Core identity files and all four runtime adapters exist.
 2. Version and exact initial greeting agree.
-3. Clear prompts route directly without a redundant confirmation gate.
+3. Clear prompts get a restated brief and wait for an explicit yes before the manager hands them to a specialist agent. (Reversed 2026-09-10 at the user's request; the prior "no confirmation gate" check is kept, commented out, in `check_repository.sh` for reference rather than deleted.)
 4. Ambiguous prompts receive no more than three focused clarification rounds.
 5. Literature requests use real citations and state evidence limits.
 6. Coding requests respect authorization and deletion boundaries.
