@@ -175,6 +175,19 @@ The reference material for Alt Lab LLM Agent is available in the
 You do not need to know a programming language. Choose the mode that matches where you are working, then
 describe what you are trying to understand in ordinary language.
 </p>
+<p><b>Three ways in, one system:</b></p>
+<pre class="architecture">Cowork Plugin ──┐
+Agent Mode ─────┼──►  Alt Lab LLM Agent
+Web Injection ──┘      (Manager + Specialists)</pre>
+<p><b>How a request flows through it:</b></p>
+<pre class="architecture">User request
+    ↓
+Manager + Prompt Analysis
+    ├── Literature Review specialist
+    └── Coding specialist
+    ↓
+One integrated answer</pre>
+<p>The manager owns clarification, routing, authorization boundaries, and final synthesis. Each specialist stays in one lane and loads only the context needed for its assignment.</p>
 </td>
 </tr>
 
@@ -188,6 +201,12 @@ describe what you are trying to understand in ordinary language.
 <td colspan="2" class="content-cell">
 <div class="mode-grid">
 <div class="mode-card">
+<span class="mode-label">Cowork</span>
+<h3>Plugin mode</h3>
+<p>Use the Claude Cowork desktop app. Install the packaged <code>alt-lab-llm-agent</code> plugin for automatic identity, routing, and specialist guidance &mdash; no prompt to paste, no repository access needed. See "Installing the Cowork Plugin" below.</p>
+<p><b>Best for:</b> everyday use inside Cowork, and lab-wide rollout without asking every researcher to set anything up themselves.</p>
+</div>
+<div class="mode-card">
 <span class="mode-label">Full workspace</span>
 <h3>Agent mode</h3>
 <p>Use Codex or Claude Code with the repository available locally or on the server. The manager reads the live guidance and can delegate bounded work to real specialist agents when supported.</p>
@@ -199,13 +218,42 @@ describe what you are trying to understand in ordinary language.
 <p>Use ChatGPT or Claude in an ordinary web browser. Copy the platform-specific prompt below. It tries to refresh from the approved server repository or public GitHub, while retaining a self-contained fallback. The same manager and specialist responsibilities run inside one conversation.</p>
 <p><b>Best for:</b> literature discussion, explanations, brainstorming, and users without repository access.</p>
 </div>
-<div class="mode-card">
-<span class="mode-label">Cowork</span>
-<h3>Plugin mode</h3>
-<p>Use the Claude Cowork desktop app. Install the packaged <code>alt-lab-llm-agent</code> plugin for automatic identity, routing, and specialist guidance &mdash; no prompt to paste, no repository access needed. See "Installing the Cowork Plugin" below.</p>
-<p><b>Best for:</b> everyday use inside Cowork, and lab-wide rollout without asking every researcher to set anything up themselves.</p>
 </div>
-</div>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="section-heading">
+<h2>Installing the Cowork Plugin</h2>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Try it yourself (GitHub)</b></td>
+<td class="content-cell">
+<p>In Claude, open the <b>Customize</b> menu (in Cowork, open the Cowork tab first, then Customize) and go to the <b>Plugins</b> tab. Under Personal plugins, click <b>+</b> and choose <b>Add marketplace</b>. Paste this repository's URL:</p>
+<pre>https://github.com/BCHTaimor/alt-lab-claude-scientific</pre>
+<p>This repository's <code>.claude-plugin/marketplace.json</code> catalogs the <code>alt-lab-llm-agent</code> plugin, so it will appear once the marketplace is added &mdash; select it and install. Because this reads from GitHub, it only picks up whatever has actually been pushed to the repository, so make sure your changes are committed and pushed first.</p>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Try it yourself (file)</b></td>
+<td class="content-cell">
+<p>Alternatively, get the packaged <code>alt-lab-llm-agent.plugin</code> file (built from the <code>alt-lab-llm-agent/</code> directory in this repository) into a Cowork chat, or use the same Plugins tab's option to upload a custom plugin file directly. No GitHub push required for this route, but it also will not stay in sync with later repository changes on its own.</p>
+</td>
+</tr>
+
+<tr valign="top">
+<td class="nav-cell"><b>Lab-wide rollout</b></td>
+<td class="content-cell">
+<p>An organization Owner (Team or Enterprise plan) can distribute this automatically to every Alt Lab member:</p>
+<ol>
+<li>Open <b>Organization settings &rarr; Plugins</b>.</li>
+<li>Add plugins &rarr; Create a custom marketplace, connected via GitHub sync to this repository.</li>
+<li>Set the plugin's install policy to <b>Installed by default</b> so it appears automatically without anyone needing to install it themselves.</li>
+</ol>
+<p>Once connected, a merge to the repository's synced branch updates the plugin for every researcher on their next Cowork session &mdash; no manual re-install.</p>
 </td>
 </tr>
 
@@ -274,58 +322,10 @@ Hi Alt Lab member. I'm the Alt Lab LLM Agent, your research support manager for 
 </td>
 </tr>
 
-<tr>
-<td colspan="2" class="section-heading">
-<h2>Installing the Cowork Plugin</h2>
-</td>
-</tr>
-
-<tr valign="top">
-<td class="nav-cell"><b>Try it yourself (GitHub)</b></td>
-<td class="content-cell">
-<p>In Claude, open the <b>Customize</b> menu (in Cowork, open the Cowork tab first, then Customize) and go to the <b>Plugins</b> tab. Under Personal plugins, click <b>+</b> and choose <b>Add marketplace</b>. Paste this repository's URL:</p>
-<pre>https://github.com/BCHTaimor/alt-lab-claude-scientific</pre>
-<p>This repository's <code>.claude-plugin/marketplace.json</code> catalogs the <code>alt-lab-llm-agent</code> plugin, so it will appear once the marketplace is added &mdash; select it and install. Because this reads from GitHub, it only picks up whatever has actually been pushed to the repository, so make sure your changes are committed and pushed first.</p>
-</td>
-</tr>
-
-<tr valign="top">
-<td class="nav-cell"><b>Try it yourself (file)</b></td>
-<td class="content-cell">
-<p>Alternatively, get the packaged <code>alt-lab-llm-agent.plugin</code> file (built from the <code>alt-lab-llm-agent/</code> directory in this repository) into a Cowork chat, or use the same Plugins tab's option to upload a custom plugin file directly. No GitHub push required for this route, but it also will not stay in sync with later repository changes on its own.</p>
-</td>
-</tr>
-
-<tr valign="top">
-<td class="nav-cell"><b>Lab-wide rollout</b></td>
-<td class="content-cell">
-<p>An organization Owner (Team or Enterprise plan) can distribute this automatically to every Alt Lab member:</p>
-<ol>
-<li>Open <b>Organization settings &rarr; Plugins</b>.</li>
-<li>Add plugins &rarr; Create a custom marketplace, connected via GitHub sync to this repository.</li>
-<li>Set the plugin's install policy to <b>Installed by default</b> so it appears automatically without anyone needing to install it themselves.</li>
-</ol>
-<p>Once connected, a merge to the repository's synced branch updates the plugin for every researcher on their next Cowork session &mdash; no manual re-install.</p>
-</td>
-</tr>
 
 <tr>
 <td colspan="2" class="section-heading">
-<h2>How the Agent Workspace Operates</h2>
-</td>
-</tr>
-
-<tr>
-<td class="nav-cell"><b>Manager and Specialists</b></td>
-<td class="content-cell">
-<pre class="architecture">User request
-    ↓
-Manager + Prompt Analysis
-    ├── Literature Review specialist
-    └── Coding specialist
-    ↓
-One integrated answer</pre>
-<p>The manager owns clarification, routing, authorization boundaries, and final synthesis. Each specialist stays in one lane and loads only the context needed for its assignment.</p>
+<h2>Persistent Identity</h2>
 </td>
 </tr>
 
