@@ -222,40 +222,6 @@ One integrated answer</pre>
 </td>
 </tr>
 
-<tr>
-<td colspan="2" class="section-heading">
-<h2>Installing the Cowork Plugin</h2>
-</td>
-</tr>
-
-<tr valign="top">
-<td class="nav-cell"><b>Try it yourself (GitHub)</b></td>
-<td class="content-cell">
-<p>In Claude, open the <b>Customize</b> menu (in Cowork, open the Cowork tab first, then Customize) and go to the <b>Plugins</b> tab. Under Personal plugins, click <b>+</b> and choose <b>Add marketplace</b>. Paste this repository's URL:</p>
-<pre>https://github.com/BCHTaimor/alt-lab-claude-scientific</pre>
-<p>This repository's <code>.claude-plugin/marketplace.json</code> catalogs the <code>alt-lab-llm-agent</code> plugin, so it will appear once the marketplace is added &mdash; select it and install. Because this reads from GitHub, it only picks up whatever has actually been pushed to the repository, so make sure your changes are committed and pushed first.</p>
-</td>
-</tr>
-
-<tr valign="top">
-<td class="nav-cell"><b>Try it yourself (file)</b></td>
-<td class="content-cell">
-<p>Alternatively, get the packaged <code>alt-lab-llm-agent.plugin</code> file (built from the <code>alt-lab-llm-agent/</code> directory in this repository) into a Cowork chat, or use the same Plugins tab's option to upload a custom plugin file directly. No GitHub push required for this route, but it also will not stay in sync with later repository changes on its own.</p>
-</td>
-</tr>
-
-<tr valign="top">
-<td class="nav-cell"><b>Lab-wide rollout</b></td>
-<td class="content-cell">
-<p>An organization Owner (Team or Enterprise plan) can distribute this automatically to every Alt Lab member:</p>
-<ol>
-<li>Open <b>Organization settings &rarr; Plugins</b>.</li>
-<li>Add plugins &rarr; Create a custom marketplace, connected via GitHub sync to this repository.</li>
-<li>Set the plugin's install policy to <b>Installed by default</b> so it appears automatically without anyone needing to install it themselves.</li>
-</ol>
-<p>Once connected, a merge to the repository's synced branch updates the plugin for every researcher on their next Cowork session &mdash; no manual re-install.</p>
-</td>
-</tr>
 
 <tr valign="top">
 <td class="nav-cell"><b>Web Setup Prompts</b></td>
