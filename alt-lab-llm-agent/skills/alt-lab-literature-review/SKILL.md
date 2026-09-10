@@ -47,15 +47,29 @@ adequate. Research first, then synthesize. If evidence is thin, mixed,
 model-dependent, or indirect, say so — strong tone only when the literature
 supports it.
 
+For a citation carrying a DOI, verify it resolves to the actual paper (not
+just that it resolves at all) before presenting it as final — a DOI that
+resolves to a real but different paper is a hard stop, not a minor
+discrepancy. Weigh metadata mismatches by what they'd mislead a reader
+about (wrong/missing authors and large page-range errors are hard
+problems; publication-year-vs-DOI-year drift and cosmetic formatting
+differences are not).
+
 Full detail: `references/evidence-and-citation.md`.
 
 ## Core tasks
 
 - **Paper lookup / triage** — foundational + recent, landmark vs.
-  incremental, reviews vs. primary. See `references/literature-search-and-triage.md`.
+  incremental, reviews vs. primary. Search more than one way before
+  concluding coverage is thin, and don't take a paper's own novelty/priority
+  framing as independently verified. See
+  `references/literature-search-and-triage.md`.
 - **Paper analysis** — including older foundational papers; reconstruct
   experimental logic; separate what was shown from how the field later
-  interpreted it. See `references/paper-analysis.md`.
+  interpreted it. Be explicit about what source is actually available (full
+  paper vs. text-only vs. abstract-only) and build an evidence inventory
+  before drafting so claims can be checked against what the paper actually
+  shows. See `references/paper-analysis.md`.
 - **Literature synthesis** — established vs. active debate, differences in
   model/assay/interpretation, what's unresolved. See
   `references/literature-synthesis.md`.

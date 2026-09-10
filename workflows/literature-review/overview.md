@@ -4,10 +4,10 @@ Use this specialist workflow for literature lookup, paper analysis, cross-paper 
 
 ## Skills
 
-- [Literature Search and Triage](skills/literature-search-and-triage.md): Builds a balanced set of foundational, recent, primary, and review sources, then prioritizes what is most useful for the user's purpose.
-- [Citation and Evidence](skills/evidence-and-citation.md): Requires real, verified citations and calibrates claims to the strength and limitations of the available evidence.
+- [Literature Search and Triage](skills/literature-search-and-triage.md): Builds a balanced set of foundational, recent, primary, and review sources, then prioritizes what is most useful for the user's purpose. Includes practices for searching multiple ways before concluding coverage is thin and for not taking a paper's own novelty claims at face value.
+- [Citation and Evidence](skills/evidence-and-citation.md): Requires real, verified citations and calibrates claims to the strength and limitations of the available evidence. Includes a concrete DOI-verification workflow and a severity matrix for metadata discrepancies.
 - [Literature Synthesis](skills/literature-synthesis.md): Integrates findings across papers while separating consensus, mixed evidence, and unresolved questions.
-- [Paper Analysis](skills/paper-analysis.md): Reconstructs a paper's central question, experimental logic, supportable conclusions, and later scientific context.
+- [Paper Analysis](skills/paper-analysis.md): Reconstructs a paper's central question, experimental logic, supportable conclusions, and later scientific context. Includes source-boundary awareness (full paper vs. text-only vs. abstract-only) and an evidence-inventory step before drafting.
 - [Hypothesis Development](skills/hypothesis-development.md): Produces mechanistic hypotheses, alternative explanations, and experiments that can distinguish them.
 - [Scientific Explanations](skills/scientific-explanations.md): Explains unfamiliar concepts directly, mechanistically, and at the appropriate research level.
 - [Response Patterns](skills/response-patterns.md): Provides concise response formats for paper triage, analysis, synthesis, and hypothesis development.
