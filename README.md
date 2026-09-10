@@ -1,12 +1,17 @@
-# Claude Scientific
+# Alt Lab LLM Agent
 
-Claude Scientific is a research support assistant for scientists, postdocs, and trainees in the Alt Lab at Boston Children's Hospital. Its role is to help users quickly look up papers, gather and sharpen ideas, compare competing hypotheses, and understand unfamiliar concepts related to immunology, genome biology, and especially V(D)J recombination in B cells.
+Alt Lab LLM Agent is a manager-led research support system for scientists, postdocs, and trainees in the Alt Lab at Boston Children's Hospital. It routes requests to focused Literature Review and Coding specialists while preserving shared scientific, privacy, and reproducibility standards.
 
-This is a discussion-and-research workflow, not a manuscript-writing workflow. Claude Scientific should act like a strong scientific thought partner: fast, careful with evidence, and useful during early-stage exploration.
+This is a discussion-and-research workflow, not a manuscript-writing workflow. Alt Lab LLM Agent should act like a strong scientific thought partner: fast, careful with evidence, and useful during early-stage exploration.
 
-## Use in Another LLM
+## Operating Modes
 
-Copy the contents of [invoke.md](invoke.md) into another LLM to invoke Claude Scientific.
+Alt Lab LLM Agent supports two ways of working:
+
+- **Agent mode:** Open this repository in Codex or Claude Code. Codex uses [AGENTS.md](AGENTS.md); Claude Code uses [CLAUDE.md](CLAUDE.md). The manager can delegate bounded tasks to specialist agents when the runtime supports delegation.
+- **Web injection mode:** Use an ordinary ChatGPT or Claude browser chat. Copy the appropriate self-contained prompt from [ChatGPT](adapters/web/chatgpt.md) or [Claude](adapters/web/claude.md). The prompt attempts to refresh from the approved server paths or public GitHub when access exists, then falls back to its embedded baseline. Specialist roles run within one conversation rather than as independent agents.
+
+See [invoke.md](invoke.md) for the short setup guide.
 
 For a fuller explanation of the repository's structure and document responsibilities, read [SUMMARY.md](SUMMARY.md).
 
@@ -17,7 +22,7 @@ For a fuller explanation of the repository's structure and document responsibili
                    |
                    v
           +-----------------+
-          | Intake / Router |
+          | Manager Agent   |
           +--------+--------+
                    |
           Understand question
@@ -37,22 +42,31 @@ For a fuller explanation of the repository's structure and document responsibili
       |                         |
       +------------+------------+
                    v
-            Select workflow
+         Route or delegate
                    |
           +--------+--------+
           |                 |
           v                 v
-      Coding         Literature Review
+   Coding Agent    Literature Agent
           |                 |
           v                 v
         skills            skills
 ```
 
-Every request first enters the Intake / Router, which identifies the user's underlying goal and determines whether the request belongs to scientific literature work or coding and project operations.
+Every request first enters the manager, which identifies the user's underlying goal and determines whether the request belongs to scientific literature work, coding and project operations, or a bounded combination of both.
 
-Prompt Analysis then checks whether the question has enough scope, context, constraints, and a clear expected output to answer without a consequential guess. If not, its skills ask targeted questions across up to three clarification rounds, normalize the request, and return it to workflow selection.
+Prompt Analysis checks whether the question has enough scope, context, constraints, and a clear expected output to answer without a consequential guess. Clear requests proceed directly. Ambiguous requests receive only the focused clarification needed to route them safely.
 
-Once the request is answerable, the router selects Literature Review or Coding. Each workflow overview lists its available skills and their purpose; select only the skills needed for the specific request. Alt Lab context and shared policies apply across the entire path when relevant.
+Once the request is answerable, the manager selects or delegates to Literature Review or Coding. Each specialist reads only the skills needed for the task and returns a bounded result for synthesis. Alt Lab context and shared policies apply across the entire path when relevant.
+
+## Identity Layer
+
+- [SOUL.md](SOUL.md) defines the shared personality, scientific values, and behavioral boundaries.
+- [IDENTITY.md](IDENTITY.md) defines the manager's name, role, purpose, and lane.
+- [USER.md](USER.md) defines the non-sensitive default profile of an Alt Lab postdoc.
+- `USER.local.md`, when present, contains private user-specific preferences and is excluded from Git.
+
+The specialist identities live under [agents](agents/), while [manager](manager/) defines routing and handoff responsibilities. Platform-specific loading instructions live under [adapters](adapters/).
 
 ## Scientific Reference Docs
 
@@ -102,4 +116,4 @@ Configuration health-check behavior is defined in [Version and Runtime](shared/v
 
 ## Bottom Line
 
-Claude Scientific is a literature and ideas assistant for the Alt Lab. It should help researchers search efficiently, think mechanistically, compare evidence carefully, and leave each conversation with a clearer understanding of the field and better next questions to ask.
+Alt Lab LLM Agent is one consistent system delivered through multiple runtimes. In Codex and Claude Code it can operate as a manager with bounded specialists. In ordinary web chats, portable prompts preserve the same identity, routing logic, scientific standards, and safety boundaries without pretending to run independent agents.

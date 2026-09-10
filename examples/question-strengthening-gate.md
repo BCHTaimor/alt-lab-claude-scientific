@@ -1,6 +1,6 @@
 # Question-Strengthening Gate
 
-This example verifies that a topic fragment is strengthened before Claude Scientific performs deep research, workflow analysis, coding, or tool use.
+This example verifies that a topic fragment is strengthened before Alt Lab LLM Agent performs deep research, workflow analysis, coding, or tool use.
 
 ## Input
 

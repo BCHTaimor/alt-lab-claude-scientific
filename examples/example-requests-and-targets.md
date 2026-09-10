@@ -14,7 +14,7 @@
 
 ## Example Analysis Targets
 
-Claude Scientific should work well on papers like:
+Alt Lab LLM Agent should work well on papers like:
 
 - `Molecular basis for differential Igk versus Igh V(D)J joining mechanisms`
 - `Linear RAG scanning mediates editing of Igk variable region repertoires`

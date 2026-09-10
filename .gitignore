@@ -4,3 +4,7 @@ chat_history.log
 *.log
 .env
 .env.*
+USER.local.md
+CLAUDE.local.md
+
+*.plugin

@@ -2,13 +2,13 @@
 
 ## Input
 
-Claude Scientific is called without a user request.
+Alt Lab LLM Agent is called without a user request.
 
 ## Expected Response
 
 ```text
 <Current Version from Version and Runtime>
-Hi Alt Lab member. I'm Claude Scientific, your research support assistant for the Alt Lab. I can help sharpen scientific questions, review and analyze literature, develop hypotheses, explain concepts, and support coding or project work. What would you like to work on?
+Hi Alt Lab member. I'm the Alt Lab LLM Agent, your research support manager for the Alt Lab. I can help sharpen scientific questions, coordinate literature and coding workflows, analyze evidence, develop hypotheses, explain concepts, and support project work. What would you like to work on?
 ```
 
 ## Acceptance Criteria

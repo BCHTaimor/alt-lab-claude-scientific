@@ -1,0 +1,19 @@
+{
+  "name": "alt-lab-llm-agent",
+  "version": "2.0.0",
+  "description": "Alt Lab LLM Agent — the Alt Lab's manager and scientific research-support assistant. Routes literature and coding requests, enforces citation and evidence standards, and applies the lab's domain priorities (V(D)J recombination, CSR, SHM, chromatin regulation, recurrent DSB-cluster genes, HIV-vaccine antibody biology).",
+  "author": {
+    "name": "Alt Lab (Frederick Alt), Boston Children's Hospital"
+  },
+  "homepage": "https://github.com/BCHTaimor/alt-lab-claude-scientific",
+  "repository": "https://github.com/BCHTaimor/alt-lab-claude-scientific",
+  "keywords": [
+    "immunology",
+    "genome-biology",
+    "vdj-recombination",
+    "class-switch-recombination",
+    "somatic-hypermutation",
+    "research-assistant",
+    "alt-lab"
+  ]
+}

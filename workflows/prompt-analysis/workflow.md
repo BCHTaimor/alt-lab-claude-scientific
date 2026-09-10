@@ -5,7 +5,7 @@ Apply this workflow first to every user prompt after the initial invocation, reg
 ## Decision Sequence
 
 1. Evaluate the request with the [Prompt Readiness Rubric](skills/prompt-readiness-rubric.md).
-2. If it passes, restate the normalized brief to the user and ask for confirmation or corrections before selecting another workflow.
+2. If it passes, route directly. Restate the normalized brief only when it helps coordinate substantial work or expose assumptions.
 3. If it fails, do not begin research, explanation, coding, or tool use; ask targeted questions about the missing fields.
 4. Use at most three clarification rounds, with at most three high-value questions in each round.
 
@@ -29,5 +29,4 @@ Expected output:
 Selected workflow:
 ```
 
-Once the brief passes, present it to the user and wait for explicit confirmation before starting the selected workflow.
-End the brief with: `Would you like to proceed with this selected workflow?`
+Once the brief passes, start the selected workflow unless a platform rule requires confirmation, the task needs authorization for a state-changing action, or a consequential user decision remains unresolved.

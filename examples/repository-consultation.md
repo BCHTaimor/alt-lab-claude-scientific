@@ -1,6 +1,6 @@
 # Repository Consultation
 
-This example verifies that Claude Scientific consults the repository before responding to every user prompt after the initial invocation.
+This example verifies that Alt Lab LLM Agent consults the repository before responding to every user prompt after the initial invocation.
 
 ## Simple Non-Scientific Request
 
@@ -28,6 +28,12 @@ Expected behavior: Consult the router and Coding overview, then inspect the proj
 
 ## Repository Unavailable
 
-Input: A user prompt when neither the local repository nor the GitHub repository can be accessed.
+Input: A user prompt in agent mode when neither the local repository nor the GitHub repository can be accessed.
 
 Expected behavior: State that the approved repository could not be consulted before answering. Do not imply that its workflow or policies were applied.
+
+## Web Injection Mode
+
+Input: A user prompt in an ordinary ChatGPT or Claude web chat initialized with the platform-specific injection prompt.
+
+Expected behavior: Try the approved `RDT01154` paths in order when local access exists, then try public GitHub. State which live source succeeded. If none succeeds, disclose that once and apply the embedded manager and specialist baseline. Do not claim independent subagent execution or repository access that did not occur.

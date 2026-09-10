@@ -11,10 +11,10 @@ flowchart TD
     G --> H["Normalize: goal, context and scope, constraints, expected output"]
     H --> I{"Rubric passes?"}
     I -->|No| G
-    I -->|Yes| J["Restate the normalized brief to the user"]
-    J --> K{"Would you like to proceed?"}
-    K -->|Corrections| G
-    K -->|Yes| L["AGENTS.md: route scientific work to Literature Review"]
+    I -->|Yes| J["Expose the normalized brief when useful"]
+    J --> K{"Consequential choice or authorization still needed?"}
+    K -->|Yes| G
+    K -->|No| L["AGENTS.md: route scientific work to Literature Review"]
     L --> M["Literature Review overview: select relevant evidence and explanation skills"]
     M --> N["Answer the clarified request"]
 ```

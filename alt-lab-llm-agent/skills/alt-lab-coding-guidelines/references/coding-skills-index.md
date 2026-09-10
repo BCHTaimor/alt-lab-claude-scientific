@@ -1,0 +1,67 @@
+# INFO
+
+This file indexes the reusable coding skills in the Coding workflow.
+
+Use it to choose which skill files to load when the user asks for coding, testing, repo structure, workflow, Git, or documentation help.
+
+# Skill: Code Skill Index And Selection
+
+## Purpose
+
+Use this file when deciding which coding skill documents are relevant to a coding or repo-maintenance task.
+
+The Coding workflow is organized as a set of reusable skills rather than as a numbered policy manual.
+
+## Default Core Skills
+
+Read these first for most coding tasks:
+
+1. [skill-code-workflow-basics.md](skill-code-workflow-basics.md)
+2. [skill-project-integrity-boundaries.md](skill-project-integrity-boundaries.md)
+3. [skill-project-collaboration-boundaries.md](skill-project-collaboration-boundaries.md)
+4. [skill-reproducible-analysis-design.md](skill-reproducible-analysis-design.md)
+5. [skill-git-safety-and-approval-workflow.md](skill-git-safety-and-approval-workflow.md)
+
+## Python And Design Skills
+
+- [skill-python-contract-and-docstring-writing.md](skill-python-contract-and-docstring-writing.md)
+- [skill-python-extension-patterns.md](skill-python-extension-patterns.md)
+
+## Testing Skills
+
+- [skill-test-case-design-for-public-interfaces.md](skill-test-case-design-for-public-interfaces.md)
+- [skill-test-suite-building-from-contracts.md](skill-test-suite-building-from-contracts.md)
+- [skill-bash-test-design-for-file-based-pipelines.md](skill-bash-test-design-for-file-based-pipelines.md)
+- [skill-repo-structure-and-testing-layout.md](skill-repo-structure-and-testing-layout.md)
+
+## Documentation Skills
+
+- [skill-readme-writing-for-technical-projects.md](skill-readme-writing-for-technical-projects.md)
+- [skill-agent-ready-document-writing.md](skill-agent-ready-document-writing.md)
+- [skill-analysis-report-writing.md](skill-analysis-report-writing.md)
+- [skill-report-version-preservation.md](skill-report-version-preservation.md)
+
+## Repo And Workflow Skills
+
+- [skill-repo-structure-and-file-placement.md](skill-repo-structure-and-file-placement.md)
+- [skill-file-naming-and-versioning.md](skill-file-naming-and-versioning.md)
+- [skill-workflow-documentation-and-command-logging.md](skill-workflow-documentation-and-command-logging.md)
+- [skill-output-file-discipline.md](skill-output-file-discipline.md)
+- [skill-output-directory-organization.md](skill-output-directory-organization.md)
+
+## Safety And Operations Skills
+
+- [skill-project-integrity-boundaries.md](skill-project-integrity-boundaries.md)
+- [skill-original-data-protection.md](skill-original-data-protection.md)
+- [skill-reproducible-analysis-design.md](skill-reproducible-analysis-design.md)
+- [skill-language-and-tool-selection.md](skill-language-and-tool-selection.md)
+- [skill-git-safety-and-approval-workflow.md](skill-git-safety-and-approval-workflow.md)
+- [skill-project-collaboration-boundaries.md](skill-project-collaboration-boundaries.md)
+
+## Related Root-Level Policies
+
+- [Language Policy](../../../shared/language-policy.md)
+- [Date And Time Policy](../../../shared/date-and-time-policy.md)
+- [Chat History Logging](../../../shared/chat-history-logging.md)
+- [General Philosophy](../../../shared/general-philosophy.md)
+- [Privacy And Institutional Data Policy](../../../shared/privacy-and-institutional-data-policy.md)

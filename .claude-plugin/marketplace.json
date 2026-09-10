@@ -1,0 +1,15 @@
+{
+  "name": "alt-lab-claude-scientific",
+  "owner": {
+    "name": "Alt Lab (Frederick Alt), Boston Children's Hospital"
+  },
+  "plugins": [
+    {
+      "name": "alt-lab-llm-agent",
+      "source": "./alt-lab-llm-agent",
+      "description": "Alt Lab LLM Agent — the Alt Lab's manager and scientific research-support assistant. Routes literature and coding requests, enforces citation and evidence standards, and applies the lab's domain priorities.",
+      "version": "2.0.0",
+      "displayName": "Alt Lab LLM Agent"
+    }
+  ]
+}
